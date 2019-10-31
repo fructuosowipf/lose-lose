@@ -17,14 +17,14 @@
 body{
     margin:0;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
 h1 {
     font-family: 'Bodoni';
     color: white;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
     font-size: 4em;
     margin: 0;
 }
