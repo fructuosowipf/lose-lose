@@ -37,8 +37,9 @@ function setup() {
 
 function draw() {
 
+  let zufall = Math.floor(Math.random() * 6) + 1
 
-  switch () {
+  switch (zufall) {
 
     case 1:
   
