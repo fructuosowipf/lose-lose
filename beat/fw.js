@@ -1,13 +1,30 @@
 //Variablen für Bilder
 
-let magnolia;
-let churrasco;
-let zufall;
+let bild1;
+let bild2;
+let bild3;
+let bild4;
+let bild5;
+let bild6;
+let bild7;
+let bild8;
+let bild9;
+let bild10;
+let bild11;
+let bild12;
+let bild13;
+let bild14;
+let bild15;
+let bild16;
+let bild17;
+let bild18;
+let bild19;
+let bild20;
 
 //Bilder vorladen
 function preload() {
-  magnolia = loadImage('imgs/magnolia.png');
-  churrasco = loadImage('imgs/churrasco.png');
+  bild1 = loadImage('imgs/magnolia.png');
+  bild2 = loadImage('imgs/churrasco.png');
 }
 
 
@@ -62,9 +79,9 @@ case 2:
   case 6:
   //Bilder
   rotate(random(5,300));
-  image(magnolia, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
+  image(bild1, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
   rotate(random(5,300));
-  image(churrasco, random(0,windowWidth), random(0,windowHeight),random(10,500),random(34,650));
+  image(bild2, random(0,windowWidth), random(0,windowHeight),random(10,500),random(34,650));
 break;
   }
 
@@ -77,8 +94,7 @@ frameRate(random(0.1,7));
 }
 
 function mousePressed(){
- //Screenshot erstellen:
- //saveFrames('out', 'png', 1, 1);
+  //Alles was hier drin steht passiert beim Klick mit der Maus
  background(0);
  frameRate(30);
 }
