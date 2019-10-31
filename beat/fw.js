@@ -85,8 +85,6 @@ case 2:
 break;
   }
 
-console.log(zufall);
-
 
 frameRate(random(0.1,7));
 
