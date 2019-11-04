@@ -14,17 +14,21 @@
     font-style: normal;
 }
 
+
 body{
     margin:0;
     overflow: hidden;
   }
 
+/* ^^^ Alles hier oben besser sein lassen ^^^ */
+/* vvv Ab hier kann verändert werden      vvv */
+
 h1 {
     font-family: 'Bodoni';
-    color: white;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    font-size: 4em;
-    margin: 0;
+    color: #ffffff; /* Schriftfarbe des Textes auf Webseite, um HEX-Code von anderer Farbe zu generieren: https://htmlcolorcodes.com/color-picker/ */
+    position: absolute; /* better don't touch */
+    bottom: 45%; /* Wie viel Prozent von UNTEN der Text positioniert wird */
+    right: 45%; /* Wie viel Prozent von RECHTS der Text positioniert wird */
+    font-size: 5.5em; /* Schriftgrösse des Textes */
+    margin: 0; /* better don't touch */
 }
