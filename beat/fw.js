@@ -23,31 +23,37 @@ let bild20;
 
 //Bilder vorladen
 function preload() {
-  bild1 = loadImage('imgs/magnolia.png');
-  bild2 = loadImage('imgs/churrasco.png');
+  bild1 = loadImage('imgs/bild1.png');
+  bild2 = loadImage('imgs/bild2.png');
+  /* Jedes weitere Bild muss hier unten eingefügt werden, hierzu Zeile oberhalb kopieren 
+  und von obigen Variablen bedienen, bspw. für nächste Zeile: bild3 = loadImage('imgs/bild3.png'); */
 }
 
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
-  background(0);
-  frameRate(0.5);
+  background(0); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
+  frameRate(0.5) /* Anzahl Frames pro Sekunde in Klammer schreiben */;
 }
 
 
 function draw() {
 
-  let zufall = Math.floor(Math.random() * 6) + 1
+  let zufall = Math.floor(Math.random() * 6) + 1 /* Dies so belassen, wählt zufällig das nächste Element */
+
+  /* Info zur random() Funktion, welche hier mehrmals zum Einsatz kommt, damit die Werte zufällig erzeugt werden:
+  Es wird zufällig ein ganzzahliger Wert zwischen dem ersten Wert vor und dem zweiten Wert nach dem Komma erzeugt. 
+  Mehr Infos: https://p5js.org/reference/#/p5/random */
 
   switch (zufall) {
 
     case 1:
   
-  //Line
-  stroke(random(0, 255),random(0,255),random(0,255));
-  strokeWeight(random(3,9));
-  noFill();
-  line(random(0,windowWidth),random(0,windowWidth),random(0,windowHeight),random(0,windowHeight));
+  // Objekt Linie erzeugen:
+  stroke(random(0, 255),random(0,255),random(0,255)); /* Farbe der Linie. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/stroke */
+  strokeWeight(random(3,9)); /* Dicke der Linie (https://p5js.org/reference/#/p5/strokeweight) */
+  noFill(); /* Damit keine Füllung für Objekt Linie erzeugt wird */
+  line(random(0,windowWidth),random(0,windowWidth),random(0,windowHeight),random(0,windowHeight)); /* Erzeugt Linie, Werte: (X-Koordinate Verbidungspunkt 1, Y-Koordinate Verbidungspunkt 1, X-Koordinate Verbidungspunkt 2, Y-Koordinate Verbidungspunkt 2) */
 break;
 
 case 2:
