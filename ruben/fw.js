@@ -38,7 +38,7 @@ let imgs = [];
 function preload() {
 
   for (var i = 0; i < bild.length; i++){
-    imgs[i] = loadImage(bild.url);
+    imgs[i] = loadImage(bild[i].url);
   }
   /* bild1 = loadImage('imgs/bild1.png');
   bild2 = loadImage('imgs/bild2.png'); */
