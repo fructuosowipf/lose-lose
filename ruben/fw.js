@@ -56,7 +56,7 @@ function setup() {
 
 function draw() {
 
-  let zufall = Math.floor(Math.random() * 9) + 1 /* Dies so belassen, wählt zufällig das nächste Element */
+  let zufall = Math.floor(Math.random() * 9) /* Dies so belassen, wählt zufällig das nächste Element */
 
   /* Info zur random() Funktion, welche hier mehrmals zum Einsatz kommt, damit die Werte zufällig erzeugt werden:
   Es wird zufällig ein ganzzahliger Wert zwischen dem ersten Wert vor und dem zweiten Wert nach dem Komma erzeugt. 
