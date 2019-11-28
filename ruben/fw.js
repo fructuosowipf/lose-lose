@@ -32,7 +32,6 @@ $.ajax({
 
 
 /* Für weiterführende Infos findet man die ganze Dokumentation von p5js unter: https://p5js.org/reference/ */
-let imgs = [];
 
 //Bilder vorladen
 function preload() {
@@ -40,9 +39,9 @@ function preload() {
   for (var i = 0; i < bild.length; i++){
     thisUrl = bild[i].url
     this["let img"+i] = loadImage(thisUrl);
-    console.log(this["img"+i]);
+    console.log('done one img');
   }
-  console.log('done');
+  console.log('done preload');
   /* bild1 = loadImage('imgs/bild1.png');
   bild2 = loadImage('imgs/bild2.png'); */
   /* Jedes weitere Bild muss hier unten eingefügt werden, hierzu Zeile oberhalb kopieren 
