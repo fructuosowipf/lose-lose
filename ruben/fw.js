@@ -3,14 +3,13 @@
 
 let googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyARcy2xM3pIK39g_O8nyhAo_htSDP8Le54&cx=001038306842663858513:0oetd1hoj58&searchType=image&fileType=jpg,png&q=berlin";
 let bild;
-let googleImg;
 
 $.ajax({
 
   url: googleImgUrl,
   dataType: 'jsonp',
   success: function(data) {
-    googleImg = data.items;
+    let googleImg = data.items;
 
     // loop for getting images:
     for (var i = 0; i < googleImg.length; i++) {
