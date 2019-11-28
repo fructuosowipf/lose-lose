@@ -34,30 +34,6 @@ $.ajax({
 /* Für weiterführende Infos findet man die ganze Dokumentation von p5js unter: https://p5js.org/reference/ */
 
 
-//Variablen für Bilder
-
-let bild1;
-let bild2;
-let bild3;
-let bild4;
-let bild5;
-let bild6;
-let bild7;
-let bild8;
-let bild9;
-let bild10;
-let bild11;
-let bild12;
-let bild13;
-let bild14;
-let bild15;
-let bild16;
-let bild17;
-let bild18;
-let bild19;
-let bild20;
-
-
 //Bilder vorladen
 function preload() {
   bild1 = loadImage('imgs/bild1.png');
