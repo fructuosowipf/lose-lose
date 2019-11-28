@@ -33,7 +33,7 @@ $.ajax({
 
 
 
-
+let img2;
 
 /* Für weiterführende Infos findet man die ganze Dokumentation von p5js unter: https://p5js.org/reference/ */
 
