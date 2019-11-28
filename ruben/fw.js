@@ -2,8 +2,16 @@
 
 $.ajax({
 
+  url: googleImgUrl,
+  dataType: 'jsonp',
+  success: function(data) {
+    googleImages = data.xx.xx.xx.xx
 
-  
+    // loop for getting images:
+    
+
+  }
+
 });
 
 
