@@ -11,16 +11,18 @@ let bild = [];
 let googleImgs;
 let img2
 
+
+let url =
+'https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin';
+googleImgs = loadJSON(url);
+
+let img2Url = googleImgs.items[2].link
+
 /* Für weiterführende Infos findet man die ganze Dokumentation von p5js unter: https://p5js.org/reference/ */
 
 //Bilder vorladen
 function preload() {
 
-  let url =
-   'https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin';
-  googleImgs = loadJSON(url);
-
-  let img2Url = googleImgs.items[2].link
   img2 = loadImage(img2Url);
 
   /* for (var i = 0; i < bild.length; i++){
