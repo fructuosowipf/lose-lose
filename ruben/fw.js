@@ -2,20 +2,35 @@
 // API-Key for this project: AIzaSyARcy2xM3pIK39g_O8nyhAo_htSDP8Le54
 
 let googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyARcy2xM3pIK39g_O8nyhAo_htSDP8Le54&cx=001038306842663858513:0oetd1hoj58&searchType=image&fileType=jpg,png&q=fructuosowipf"
+let bild
 
 $.ajax({
 
   url: googleImgUrl,
   dataType: 'jsonp',
   success: function(data) {
-    googleImages = data.xx.xx.xx.xx
+    googleImages = data.items.link
 
     // loop for getting images:
-
+    for (var i = 0; i < googleImages.length; i++) {
+      bild = {
+        number: i,
+        url: googleImages[i]
+      };
+/*       var article = articles[i];
+      $nytElem.append('<li class="article">' +
+      '<a target="_blank" href="' + article.web_url + '">' + article.headline.main + 
+      '</a>'+
+      '<p>' + article.snippet + '</p>' + 
+      '</li>'); */
+  };
 
   }
 
 });
+
+
+
 
 
 /* Für weiterführende Infos findet man die ganze Dokumentation von p5js unter: https://p5js.org/reference/ */
