@@ -13,7 +13,7 @@ $.ajax({
   url: googleImgUrl,
   dataType: 'json',
   success: function(data) {
-    let googleImg = data.items;
+    googleImg = data.items;
 
     // loop for getting images:
     for (var i = 0; i < googleImg.length; i++) {
