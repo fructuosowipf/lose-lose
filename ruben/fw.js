@@ -28,7 +28,11 @@ $.ajax({
 });
 
 
-
+for (var i = 0; i < bild.length; i++){
+  thisUrl = bild[i].url
+  this["img"+i] = loadImage(thisUrl);
+  console.log('done one img');
+}
 
 
 /* Für weiterführende Infos findet man die ganze Dokumentation von p5js unter: https://p5js.org/reference/ */
@@ -36,11 +40,7 @@ $.ajax({
 //Bilder vorladen
 function preload() {
 
-  for (var i = 0; i < bild.length; i++){
-    thisUrl = bild[i].url
-    this["let img"+i] = loadImage(thisUrl);
-    console.log('done one img');
-  }
+  
   console.log('done preload');
   /* bild1 = loadImage('imgs/bild1.png');
   bild2 = loadImage('imgs/bild2.png'); */
