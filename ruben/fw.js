@@ -1,4 +1,5 @@
 /* Google Image Search API */
+// API-Key for this project: AIzaSyARcy2xM3pIK39g_O8nyhAo_htSDP8Le54
 
 $.ajax({
 
@@ -8,7 +9,7 @@ $.ajax({
     googleImages = data.xx.xx.xx.xx
 
     // loop for getting images:
-    
+
 
   }
 
