@@ -9,14 +9,14 @@ $.ajax({
   url: googleImgUrl,
   dataType: 'jsonp',
   success: function(data) {
-    bilder = data.items;
+    googleImg = data.items;
 
     // loop for getting images:
-    for (var i = 0; i < bilder.length; i++) {
-      bild = bilder[i]
+    for (var i = 0; i < googleImg.length; i++) {
+      googleImgItem = googleImg[i]
       bild = {};
       bild.num = i;
-      bild.url = bild.link;
+      bild.url = googleImgItem.link;
       
 /*       var article = articles[i];
       $nytElem.append('<li class="article">' +
