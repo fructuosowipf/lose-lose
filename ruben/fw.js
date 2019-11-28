@@ -20,7 +20,8 @@ function preload() {
    'https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin';
   googleImgs = loadJSON(url);
 
-  img2 = loadImage(googleImgs.items[2].link);
+  let img2Url = googleImgs.items[2].link
+  img2 = loadImage(img2Url);
 
   /* for (var i = 0; i < bild.length; i++){
     thisUrl = bild[i].url
