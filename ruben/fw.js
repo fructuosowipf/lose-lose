@@ -24,6 +24,7 @@ let url =
 function preload() {
 
   googleImgs = loadJSON(url);
+  let img2Url = googleImgs.items[2].link;
 
   img2 = loadImage(img2Url);
 
@@ -41,7 +42,7 @@ function preload() {
   -> Siehe ab Zeile 100 */
 }
 
-let img2Url = googleImgs.items[2].link;
+
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
