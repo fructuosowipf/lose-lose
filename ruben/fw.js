@@ -71,7 +71,6 @@ function draw() {
     //Objekt Bild erzeugen:
   rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
   image(imgs[zufall], random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
-  break;
 
 console.log(zufall);
 
