@@ -36,8 +36,12 @@ $.ajax({
 
 //Bilder vorladen
 function preload() {
-  bild1 = loadImage('imgs/bild1.png');
-  bild2 = loadImage('imgs/bild2.png');
+
+  for (var i = 0; i < bild.length; i++){
+    imgs[i] = loadImage(bild.url);
+  }
+  /* bild1 = loadImage('imgs/bild1.png');
+  bild2 = loadImage('imgs/bild2.png'); */
   /* Jedes weitere Bild muss hier unten eingefügt werden, hierzu Zeile oberhalb kopieren 
   und von obigen Variablen bedienen, bspw. für nächste Zeile: bild3 = loadImage('imgs/bild3.png'); -> Bild entsprechend unter /ruben/imgs/ im github hochladen !!!
   AUSSERDEM: Für neues Bild ganz unten neue Einträge für die Rotation und für das Erzeugen des Bildes erstellen.
