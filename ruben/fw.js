@@ -14,7 +14,7 @@ $.ajax({
     // loop for getting images:
     for (var i = 0; i < googleImg.length; i++) {
       googleImgItem = googleImg[i]
-      bild.push({num: i, url: googleImgItem.link});
+      bild[i] = googleImgItem.link;
 /*       var article = articles[i];
       $nytElem.append('<li class="article">' +
       '<a target="_blank" href="' + article.web_url + '">' + article.headline.main + 
@@ -35,8 +35,8 @@ $.ajax({
 
 //Bilder vorladen
 function preload() {
-  thisUrl = bild[2].url
-  bild2 = loadImage(thisUrl);
+
+  img2 = loadImage(bild[2]);
 
   /* for (var i = 0; i < bild.length; i++){
     thisUrl = bild[i].url
