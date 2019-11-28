@@ -8,30 +8,6 @@
 googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin";
 let bild = [];
 
-$.ajax({
-
-  url: googleImgUrl,
-  dataType: 'json',
-  success: function(data) {
-    googleImg = data.items;
-
-    // loop for getting images:
-    for (var i = 0; i < googleImg.length; i++){
-      bild[i] = googleImg[i].link;
-/*       var article = articles[i];
-      $nytElem.append('<li class="article">' +
-      '<a target="_blank" href="' + article.web_url + '">' + article.headline.main + 
-      '</a>'+
-      '<p>' + article.snippet + '</p>' + 
-      '</li>'); */
-      console.log('ajax loop done');
-  };
-
-  }
-
-});
-
-
 
 let img2;
 
@@ -58,8 +34,13 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
+  loadJSON('https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin');
   background(0); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
   frameRate(0.5) /* Anzahl Frames pro Sekunde in Klammer schreiben */;
+}
+
+function gotData(data) {
+  images = data;
 }
 
 function draw() {
