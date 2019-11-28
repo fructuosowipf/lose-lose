@@ -36,11 +36,13 @@ $.ajax({
 //Bilder vorladen
 function preload() {
 
-  for (var i = 0; i < bild.length; i++){
+  bild2 = loadImage(bild[2].url);
+
+  /* for (var i = 0; i < bild.length; i++){
     thisUrl = bild[i].url
     this["img"+i] = loadImage(thisUrl);
     console.log('done one img');
-  }
+  } */
   console.log('done preload');
   /* bild1 = loadImage('imgs/bild1.png');
   bild2 = loadImage('imgs/bild2.png'); */
@@ -73,7 +75,7 @@ function draw() {
     //Objekt Bild erzeugen:
 
   rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-  image(bild[2].url, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
+  image(bild2, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
 
 
 
