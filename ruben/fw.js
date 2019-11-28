@@ -40,7 +40,7 @@ $.ajax({
 //Bilder vorladen
 function preload() {
 
-  //img2 = loadImage(bild[2]);
+  img2 = loadImage(bild[2]);
 
   /* for (var i = 0; i < bild.length; i++){
     thisUrl = bild[i].url
@@ -78,8 +78,8 @@ function draw() {
 
     //Objekt Bild erzeugen:
 
-  //rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-  //image(bild2, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
+  rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+  image(img2, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
 
 
 
