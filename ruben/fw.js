@@ -2,7 +2,7 @@
 // API-Key for this project: AIzaSyARcy2xM3pIK39g_O8nyhAo_htSDP8Le54
 
 let googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyARcy2xM3pIK39g_O8nyhAo_htSDP8Le54&cx=001038306842663858513:0oetd1hoj58&searchType=image&fileType=jpg,png&q=fructuosowipf";
-let bild;
+let bild = [];
 
 $.ajax({
 
@@ -14,7 +14,6 @@ $.ajax({
     // loop for getting images:
     for (var i = 0; i < googleImg.length; i++) {
       googleImgItem = googleImg[i]
-      bild = [];
       bild.push({num: i, url: googleImgItem.link});
 /*       var article = articles[i];
       $nytElem.append('<li class="article">' +
