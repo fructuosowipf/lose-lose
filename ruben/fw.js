@@ -8,13 +8,17 @@
 googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin";
 let bild = [];
 
-let images;
+let googleImgs;
 let img2;
 
 /* Für weiterführende Infos findet man die ganze Dokumentation von p5js unter: https://p5js.org/reference/ */
 
 //Bilder vorladen
 function preload() {
+
+  let url =
+   'https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin';
+  googleImgs = loadJSON(url);
 
   //img2 = loadImage(bild[2]);
 
@@ -34,14 +38,10 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
-  loadJSON('https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin');
   background(0); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
   frameRate(0.5) /* Anzahl Frames pro Sekunde in Klammer schreiben */;
 }
 
-function gotData(data) {
-  images = data;
-}
 
 function draw() {
 
@@ -59,8 +59,8 @@ function draw() {
 
     //Objekt Bild erzeugen:
 
-  rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-  image(img2, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
+  //rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+  //image(img2, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
 
 
 
