@@ -14,14 +14,16 @@ let img2
 
 let url =
 'https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin';
-googleImgs = loadJSON(url);
 
-let img2Url = googleImgs.items[2].link
+
+
 
 /* Für weiterführende Infos findet man die ganze Dokumentation von p5js unter: https://p5js.org/reference/ */
 
 //Bilder vorladen
 function preload() {
+
+  googleImgs = loadJSON(url);
 
   img2 = loadImage(img2Url);
 
@@ -38,6 +40,8 @@ function preload() {
   AUSSERDEM: Für neues Bild ganz unten neue Einträge für die Rotation und für das Erzeugen des Bildes erstellen.
   -> Siehe ab Zeile 100 */
 }
+
+let img2Url = googleImgs.items[2].link;
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
