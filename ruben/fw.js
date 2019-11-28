@@ -40,6 +40,7 @@ function preload() {
   for (var i = 0; i < bild.length; i++){
     imgs[i] = loadImage(bild[i].url);
   }
+  console.log(imgs);
   /* bild1 = loadImage('imgs/bild1.png');
   bild2 = loadImage('imgs/bild2.png'); */
   /* Jedes weitere Bild muss hier unten eingefügt werden, hierzu Zeile oberhalb kopieren 
