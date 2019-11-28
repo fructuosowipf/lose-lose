@@ -2,7 +2,8 @@
 // API-Key for this project: AIzaSyARcy2xM3pIK39g_O8nyhAo_htSDP8Le54
 
 let googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyARcy2xM3pIK39g_O8nyhAo_htSDP8Le54&cx=001038306842663858513:0oetd1hoj58&searchType=image&fileType=jpg,png&q=berlin";
-let bild = [];
+let bild;
+let googleImg;
 
 $.ajax({
 
