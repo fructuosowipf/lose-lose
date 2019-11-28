@@ -14,10 +14,10 @@ $.ajax({
     // loop for getting images:
     for (var i = 0; i < bilder.length; i++) {
       bild = bilder[i]
-      bild = {
-        num: i,
-        url: bild.link
-      };
+      bild = {};
+      bild.num = i;
+      bild.url = bild.link;
+      
 /*       var article = articles[i];
       $nytElem.append('<li class="article">' +
       '<a target="_blank" href="' + article.web_url + '">' + article.headline.main + 
