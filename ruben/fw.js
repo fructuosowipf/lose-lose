@@ -11,7 +11,7 @@ let bild;
 $.ajax({
 
   url: googleImgUrl,
-  dataType: 'jsonp',
+  dataType: 'json',
   success: function(data) {
     let googleImg = data.items;
 
