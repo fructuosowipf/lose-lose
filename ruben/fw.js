@@ -32,7 +32,7 @@ $.ajax({
 
 
 /* Für weiterführende Infos findet man die ganze Dokumentation von p5js unter: https://p5js.org/reference/ */
-
+let imgs = [];
 
 //Bilder vorladen
 function preload() {
