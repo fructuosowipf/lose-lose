@@ -8,7 +8,7 @@
 googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin";
 let bild = [];
 
-
+let images;
 let img2;
 
 /* Für weiterführende Infos findet man die ganze Dokumentation von p5js unter: https://p5js.org/reference/ */
