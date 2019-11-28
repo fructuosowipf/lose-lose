@@ -20,7 +20,7 @@ function preload() {
    'https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin';
   googleImgs = loadJSON(url);
 
-  //img2 = loadImage(bild[2]);
+  img2 = loadImage(googleImgs.items[2].link);
 
   /* for (var i = 0; i < bild.length; i++){
     thisUrl = bild[i].url
@@ -59,8 +59,8 @@ function draw() {
 
     //Objekt Bild erzeugen:
 
-  //rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-  //image(img2, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
+  rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+  image(img2, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
 
 
 
