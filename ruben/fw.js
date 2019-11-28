@@ -28,11 +28,7 @@ $.ajax({
 });
 
 
-for (var i = 0; i < bild.length; i++){
-  thisUrl = bild[i].url
-  this["img"+i] = loadImage(thisUrl);
-  console.log('done one img');
-}
+
 
 
 /* Für weiterführende Infos findet man die ganze Dokumentation von p5js unter: https://p5js.org/reference/ */
@@ -40,7 +36,11 @@ for (var i = 0; i < bild.length; i++){
 //Bilder vorladen
 function preload() {
 
-  
+  for (var i = 0; i < bild.length; i++){
+    thisUrl = bild[i].url
+    this["img"+i] = loadImage(thisUrl);
+    console.log('done one img');
+  }
   console.log('done preload');
   /* bild1 = loadImage('imgs/bild1.png');
   bild2 = loadImage('imgs/bild2.png'); */
@@ -72,8 +72,8 @@ function draw() {
 
     //Objekt Bild erzeugen:
 
-  // rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-  // image(imgs[zufall], random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
+  rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+  image(bild[0].url, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
 
 
 
