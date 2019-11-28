@@ -17,7 +17,7 @@ $.ajax({
       bild = {};
       bild.num = i;
       bild.url = googleImgItem.link;
-      
+      console.log(bild);
 /*       var article = articles[i];
       $nytElem.append('<li class="article">' +
       '<a target="_blank" href="' + article.web_url + '">' + article.headline.main + 
