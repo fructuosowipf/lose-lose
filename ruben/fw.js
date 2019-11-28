@@ -35,8 +35,8 @@ $.ajax({
 
 //Bilder vorladen
 function preload() {
-
-  bild2 = loadImage(bild[2].url);
+  thisUrl = bild[2].url
+  bild2 = loadImage(thisUrl);
 
   /* for (var i = 0; i < bild.length; i++){
     thisUrl = bild[i].url
