@@ -9,7 +9,7 @@ googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4P
 let bild = [];
 
 let googleImgs;
-let img2;
+let img2
 
 /* Für weiterführende Infos findet man die ganze Dokumentation von p5js unter: https://p5js.org/reference/ */
 
