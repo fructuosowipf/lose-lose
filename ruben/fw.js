@@ -1,7 +1,11 @@
 /* Google Image Search API */
 // API-Key for this project: AIzaSyARcy2xM3pIK39g_O8nyhAo_htSDP8Le54
 
-let googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyARcy2xM3pIK39g_O8nyhAo_htSDP8Le54&cx=001038306842663858513:0oetd1hoj58&searchType=image&fileType=jpg,png&q=berlin";
+// timeout ruben.fructuoso@gmail.com
+//let googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyARcy2xM3pIK39g_O8nyhAo_htSDP8Le54&cx=001038306842663858513:0oetd1hoj58&searchType=image&fileType=jpg,png&q=berlin";
+
+//timeout ma.wibilea@gmail.com
+googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin";
 let bild;
 
 $.ajax({
