@@ -39,7 +39,7 @@ function preload() {
 
   for (var i = 0; i < bild.length; i++){
     thisUrl = bild[i].url
-    imgs[i] = loadImage(thisUrl);
+    eval("img" + i) = loadImage(thisUrl);
   }
   console.log('done');
   /* bild1 = loadImage('imgs/bild1.png');
