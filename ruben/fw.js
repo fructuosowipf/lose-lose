@@ -8,7 +8,7 @@ let googleImg;
 $.ajax({
 
   url: googleImgUrl,
-  dataType: 'json',
+  dataType: 'jsonp',
   success: function(data) {
     googleImg = data.items;
 
