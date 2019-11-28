@@ -22,6 +22,7 @@ $.ajax({
       '</a>'+
       '<p>' + article.snippet + '</p>' + 
       '</li>'); */
+      console.log('ajax loop done');
   };
 
   }
