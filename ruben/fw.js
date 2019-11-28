@@ -16,7 +16,7 @@ let img2;
 //Bilder vorladen
 function preload() {
 
-  img2 = loadImage(bild[2]);
+  //img2 = loadImage(bild[2]);
 
   /* for (var i = 0; i < bild.length; i++){
     thisUrl = bild[i].url
