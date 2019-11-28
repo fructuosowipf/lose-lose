@@ -6,7 +6,7 @@
 
 //timeout ma.wibilea@gmail.com
 googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin";
-let bild;
+let bild = [];
 
 $.ajax({
 
@@ -16,9 +16,8 @@ $.ajax({
     googleImg = data.items;
 
     // loop for getting images:
-    for (var i = 0; i < googleImg.length; i++) {
-      googleImgItem = googleImg[i]
-      bild[i] = googleImgItem.link;
+    for (var i = 0; i < googleImg.length; i++){
+      bild[i] = googleImg[i].link;
 /*       var article = articles[i];
       $nytElem.append('<li class="article">' +
       '<a target="_blank" href="' + article.web_url + '">' + article.headline.main + 
