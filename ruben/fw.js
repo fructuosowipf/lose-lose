@@ -38,9 +38,10 @@ let imgs = [];
 function preload() {
 
   for (var i = 0; i < bild.length; i++){
-    imgs[i] = loadImage(bild[i].url);
+    thisUrl = bild[i].url
+    imgs[i] = loadImage(thisUrl);
   }
-  console.log(imgs);
+  console.log('done');
   /* bild1 = loadImage('imgs/bild1.png');
   bild2 = loadImage('imgs/bild2.png'); */
   /* Jedes weitere Bild muss hier unten eingefügt werden, hierzu Zeile oberhalb kopieren 
@@ -73,7 +74,7 @@ function draw() {
   rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
   image(imgs[zufall], random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
 
-console.log(zufall);
+
 
 frameRate(random(0.1,7)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */ 
 
