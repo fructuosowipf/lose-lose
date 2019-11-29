@@ -8,7 +8,6 @@
 let googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin";
 
 
-
 let googleRequestTimeout = setTimeout(function(){
   $('h1').text('Unable to load Wikipedia Articles, please try again later!');
 }, 2000);
@@ -22,10 +21,14 @@ $.ajax({
 
       googleImgs = data.items;
 
+      console.log('before loop done.');
+
       for(var i = 0; i < googleImgs.length; i++){
           let googleImg = googleImgs[i];
           $('body').append('<img class="img' + i + '" src="' + googleImg.link + '" alt="googleImg_' + i + '"/>');
       };
+
+      console.log('after loop done.');
 
       clearTimeout(googleRequestTimeout);
 
