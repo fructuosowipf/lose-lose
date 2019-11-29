@@ -42,7 +42,7 @@ $.ajax({
 /* Für weiterführende Infos findet man die ganze Dokumentation von p5js unter: https://p5js.org/reference/ */
 
 //Bilder vorladen
-function preload(googleImgs) {
+function preload() {
 
   
   
