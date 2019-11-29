@@ -32,7 +32,6 @@ $.ajax({
 
       clearTimeout(googleRequestTimeout);
 
-      return googleImgs;
 
   }
 });
@@ -48,7 +47,7 @@ function preload(googleImgs) {
   
   
 
-  img2 = loadImage(googleImgs[9].link);
+  img2 = loadImage($('.img2').attr('src'));
 
   /* for (var i = 0; i < bild.length; i++){
     thisUrl = bild[i].url
