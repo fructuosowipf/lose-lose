@@ -5,15 +5,32 @@
 //let googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyARcy2xM3pIK39g_O8nyhAo_htSDP8Le54&cx=001038306842663858513:0oetd1hoj58&searchType=image&fileType=jpg,png&q=berlin";
 
 //timeout ma.wibilea@gmail.com
-googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin";
-let bild = [];
-
-let googleImgs;
-let img2
+let googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin";
 
 
-let url =
-'https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoorUS4PeeiVhtdxIAg2aSEJW1FHlU&cx=002715237432738536399:ub2vi6vqucv&searchType=image&fileType=jpg,png&q=berlin';
+
+let googleRequestTimeout = setTimeout(function(){
+  $wikiElem.text('Unable to load Wikipedia Articles, please try again later!');
+}, 2000);
+
+
+
+$.ajax({
+  url: googleImgUrl,
+  dataType: 'json',
+  success: function(data) {
+
+      googleImgs = data.items;
+
+      for(var i = 0; i < googleImgs.length; i++){
+          let googleImg = googleImgs[i];
+          $('body').append('<img class="img' + i + '" src="' + googleImg.link + '" alt="googleImg_' + i + '"/>');
+      };
+
+      clearTimeout(googleRequestTimeout);
+
+  }
+});
 
 
 
@@ -23,10 +40,10 @@ let url =
 //Bilder vorladen
 function preload() {
 
-  googleImgs = loadJSON(url);
-  let img2Url = googleImgs.items[2].link;
+  
+  
 
-  img2 = loadImage(img2Url);
+  //img2 = loadImage(img2Url);
 
   /* for (var i = 0; i < bild.length; i++){
     thisUrl = bild[i].url
@@ -67,8 +84,8 @@ function draw() {
 
     //Objekt Bild erzeugen:
 
-  rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-  image(img2, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
+  //rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+  //image(img2, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
 
 
 
