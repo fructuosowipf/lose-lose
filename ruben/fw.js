@@ -25,7 +25,7 @@ $.ajax({
 
       for(var i = 0; i < googleImgs.length; i++){
           let googleImg = googleImgs[i];
-          $('body').append('<img class="img' + i + '" src="' + googleImg.link + '" alt="googleImg_' + i + '"/>');
+          $('h1').append('<img class="img' + i + '" src="' + googleImg.link + '" alt="googleImg_' + i + '"/>');
       };
 
       console.log('after loop done.');
