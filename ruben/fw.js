@@ -10,7 +10,7 @@ let googleImgUrl = "https://www.googleapis.com/customsearch/v1?key=AIzaSyCjUKoor
 
 
 let googleRequestTimeout = setTimeout(function(){
-  $wikiElem.text('Unable to load Wikipedia Articles, please try again later!');
+  $('h1').text('Unable to load Wikipedia Articles, please try again later!');
 }, 2000);
 
 
