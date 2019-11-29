@@ -32,6 +32,8 @@ $.ajax({
 
       clearTimeout(googleRequestTimeout);
 
+      return googleImgs;
+
   }
 });
 
