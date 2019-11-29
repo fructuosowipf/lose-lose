@@ -41,12 +41,12 @@ $.ajax({
 /* Für weiterführende Infos findet man die ganze Dokumentation von p5js unter: https://p5js.org/reference/ */
 
 //Bilder vorladen
-function preload() {
+function preload(googleImgs) {
 
   
   
 
-  //img2 = loadImage(img2Url);
+  img2 = loadImage(googleImgs[9].link);
 
   /* for (var i = 0; i < bild.length; i++){
     thisUrl = bild[i].url
