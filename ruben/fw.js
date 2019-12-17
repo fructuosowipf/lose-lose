@@ -17,8 +17,8 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
-  background(0); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
-  frameRate(random(0.5,8)); /* Anzahl Frames pro Sekunde in Klammer schreiben */
+  background(220, 0, 30); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
+  frameRate(random(0.5,120)); /* Anzahl Frames pro Sekunde in Klammer schreiben */
 }
 
 function draw() {
