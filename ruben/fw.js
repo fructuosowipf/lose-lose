@@ -48,10 +48,10 @@ function draw() {
   /* Erzeugt Bild, Werte: (Pfad zum Bild > wird über Variable "bildX" reingeladen wie oben beim Vorladen definiert, X-Koordinate, Y-Koordinate, Breite, Höhe) */
 
 
-  }
+  
 
 
-frameRate(random(0.1,7)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */ 
+  frameRate(random(0.5,120)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */ 
 
 
 }
