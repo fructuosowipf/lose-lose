@@ -23,7 +23,7 @@ function setup() {
 
 function draw() {
 
-  let zufall = random(1,2); /* Dies so belassen, wählt zufällig das nächste Element */
+  /* let zufall = random(1,2);  Dies so belassen, wählt zufällig das nächste Element */
 
   /* Info zur random() Funktion, welche hier mehrmals zum Einsatz kommt, damit die Werte zufällig erzeugt werden:
   Es wird zufällig ein ganzzahliger Wert zwischen dem ersten Wert vor und dem zweiten Wert nach dem Komma erzeugt. 
@@ -34,24 +34,20 @@ function draw() {
   
   */
 
-  switch (zufall) {
-
-  case 1:
+  
   //Objekt Bezierkurve erzeugen:
   noFill();
   stroke(random(150, 255),random(0,50),random(10,180)); /* Farbe der Linie. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/stroke */
   strokeWeight(random(15,55)); /* Dicke der Linie (https://p5js.org/reference/#/p5/strokeweight) */
   bezier(random(0,windowWidth), random(0,windowHeight), random(0,windowWidth), random(0,windowWidth), random(0,windowWidth), random(0,windowHeight), random(0,windowWidth), random(0,windowHeight)); 
   /* Erzeugt Bezierkurve, Werte: (X-Koordinate Verbidungspunkt 1, Y-Koordinate Verbidungspunkt 1, X-Koordinate Verbidungspunkt 2, Y-Koordinate Verbidungspunkt 2, X-Koordinate Verbidungspunkt 3, Y-Koordinate Verbidungspunkt 3, X-Koordinate Verbidungspunkt 4, Y-Koordinate Verbidungspunkt 4) */
-  break;
-
-  case 2:
+ 
   //Objekt Bild erzeugen:
   rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
   image(fernsehturm, random(0,windowWidth), random(0,windowHeight),random(30,1200),random(100,1800));
   /* Erzeugt Bild, Werte: (Pfad zum Bild > wird über Variable "bildX" reingeladen wie oben beim Vorladen definiert, X-Koordinate, Y-Koordinate, Breite, Höhe) */
 
-  break;
+
   }
 
 
