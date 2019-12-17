@@ -95,5 +95,5 @@ frameRate(random(0.1,7)); /*Erzeugt nach dem Laden eines Objekts für das nächs
 function mousePressed(){
   //Alles was hier drin steht passiert beim Klick mit der Maus
  background(0);
- frameRate(30);
+ frameRate(0.5);
 }
