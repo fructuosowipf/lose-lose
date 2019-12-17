@@ -45,32 +45,32 @@ function draw() {
  
   //Objekt Bild erzeugen:
   rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-  image(fernsehturm, random(0,windowWidth), random(0,windowHeight),random(30,1200),random(100,1800));
+  image(fernsehturm, random(0,windowWidth), random(0,windowHeight),random(100,1200),random(400,1800));
   /* Erzeugt Bild, Werte: (Pfad zum Bild > wird über Variable "bildX" reingeladen wie oben beim Vorladen definiert, X-Koordinate, Y-Koordinate, Breite, Höhe) */
 
     //Objekt Bild erzeugen:
     rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-    image(fernsehturm, random(0,windowWidth), random(0,windowHeight),random(30,1200),random(100,1800));
+    image(fernsehturm, random(0,windowWidth), random(0,windowHeight),random(30,1200),random(100,2500));
     /* Erzeugt Bild, Werte: (Pfad zum Bild > wird über Variable "bildX" reingeladen wie oben beim Vorladen definiert, X-Koordinate, Y-Koordinate, Breite, Höhe) */
 
       //Objekt Bild erzeugen:
   rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-  image(fernsehturm, random(0,windowWidth), random(0,windowHeight),random(30,1200),random(100,1800));
+  image(fernsehturm, random(0,windowWidth), random(0,windowHeight),random(500,1200),random(100,1800));
   /* Erzeugt Bild, Werte: (Pfad zum Bild > wird über Variable "bildX" reingeladen wie oben beim Vorladen definiert, X-Koordinate, Y-Koordinate, Breite, Höhe) */
 
  //Objekt Bild erzeugen:
  rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
- image(fernsehturm2, random(0,windowWidth), random(0,windowHeight),random(30,1200),random(100,1800));
+ image(fernsehturm2, random(0,windowWidth), random(0,windowHeight),random(100,1200),random(400,1800));
  /* Erzeugt Bild, Werte: (Pfad zum Bild > wird über Variable "bildX" reingeladen wie oben beim Vorladen definiert, X-Koordinate, Y-Koordinate, Breite, Höhe) */
 
    //Objekt Bild erzeugen:
    rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-   image(fernsehturm2, random(0,windowWidth), random(0,windowHeight),random(30,1200),random(100,1800));
+   image(fernsehturm2, random(0,windowWidth), random(0,windowHeight),random(30,1200),random(100,2500));
    /* Erzeugt Bild, Werte: (Pfad zum Bild > wird über Variable "bildX" reingeladen wie oben beim Vorladen definiert, X-Koordinate, Y-Koordinate, Breite, Höhe) */
 
      //Objekt Bild erzeugen:
  rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
- image(fernsehturm2, random(0,windowWidth), random(0,windowHeight),random(30,1200),random(100,1800));
+ image(fernsehturm2, random(0,windowWidth), random(0,windowHeight),random(500,1200),random(100,1800));
  /* Erzeugt Bild, Werte: (Pfad zum Bild > wird über Variable "bildX" reingeladen wie oben beim Vorladen definiert, X-Koordinate, Y-Koordinate, Breite, Höhe) */
   
 
