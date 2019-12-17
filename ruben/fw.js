@@ -3,34 +3,14 @@
 
 //Variablen für Bilder
 
-let bild1;
-let bild2;
-let bild3;
-let bild4;
-let bild5;
-let bild6;
-let bild7;
-let bild8;
-let bild9;
-let bild10;
-let bild11;
-let bild12;
-let bild13;
-let bild14;
-let bild15;
-let bild16;
-let bild17;
-let bild18;
-let bild19;
-let bild20;
+let fernsehturm
 
 
 //Bilder vorladen
 function preload() {
-  bild1 = loadImage('imgs/bild1.png');
-  bild2 = loadImage('imgs/bild2.png');
+  fernsehturm = loadImage('imgs/berlin_tit.png');
   /* Jedes weitere Bild muss hier unten eingefügt werden, hierzu Zeile oberhalb kopieren 
-  und von obigen Variablen bedienen, bspw. für nächste Zeile: bild3 = loadImage('imgs/bild3.png'); -> Bild entsprechend unter /ruben/imgs/ im github hochladen !!!
+  und von obigen Variablen bedienen, bspw. für nächste Zeile: bild3 = loadImage('imgs/bild3.png'); -> Bild entsprechend unter /beat/imgs/ im github hochladen !!!
   AUSSERDEM: Für neues Bild ganz unten neue Einträge für die Rotation und für das Erzeugen des Bildes erstellen.
   -> Siehe ab Zeile 100 */
 }
@@ -38,7 +18,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth,windowHeight);
   background(0); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
-  frameRate(0.5) /* Anzahl Frames pro Sekunde in Klammer schreiben */;
+  frameRate(random(0.5,8)); /* Anzahl Frames pro Sekunde in Klammer schreiben */
 }
 
 function draw() {
@@ -100,11 +80,8 @@ function draw() {
   case 6:
   //Objekt Bild erzeugen:
   rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-  image(bild1, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
-  /* Erzeugt Bezierkurve, Werte: (Pfad zum Bild > wird über Variable "bildX" reingeladen wie oben beim Vorladen definiert, X-Koordinate, Y-Koordinate, Breite, Höhe) */
-  rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-  image(bild2, random(0,windowWidth), random(0,windowHeight),random(10,500),random(34,650));
-  /* Erzeugt Bezierkurve, Werte: (Pfad zum Bild > wird über Variable "bildX" reingeladen wie oben beim Vorladen definiert, X-Koordinate, Y-Koordinate, Breite, Höhe) */
+  image(fernsehturm, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
+  /* Erzeugt Bild, Werte: (Pfad zum Bild > wird über Variable "bildX" reingeladen wie oben beim Vorladen definiert, X-Koordinate, Y-Koordinate, Breite, Höhe) */
 
   break;
   }
@@ -118,5 +95,5 @@ frameRate(random(0.1,7)); /*Erzeugt nach dem Laden eines Objekts für das nächs
 function mousePressed(){
   //Alles was hier drin steht passiert beim Klick mit der Maus
  background(0);
- frameRate(30);
+ frameRate(0.5);
 }
