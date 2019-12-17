@@ -18,7 +18,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth,windowHeight);
   background(220, 0, 30); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
-  frameRate(random(0.5,120)); /* Anzahl Frames pro Sekunde in Klammer schreiben */
+  frameRate(random(0.5,10)); /* Anzahl Frames pro Sekunde in Klammer schreiben */
 }
 
 function draw() {
@@ -47,11 +47,21 @@ function draw() {
   image(fernsehturm, random(0,windowWidth), random(0,windowHeight),random(30,1200),random(100,1800));
   /* Erzeugt Bild, Werte: (Pfad zum Bild > wird über Variable "bildX" reingeladen wie oben beim Vorladen definiert, X-Koordinate, Y-Koordinate, Breite, Höhe) */
 
+    //Objekt Bild erzeugen:
+    rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+    image(fernsehturm, random(0,windowWidth), random(0,windowHeight),random(30,1200),random(100,1800));
+    /* Erzeugt Bild, Werte: (Pfad zum Bild > wird über Variable "bildX" reingeladen wie oben beim Vorladen definiert, X-Koordinate, Y-Koordinate, Breite, Höhe) */
+
+      //Objekt Bild erzeugen:
+  rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+  image(fernsehturm, random(0,windowWidth), random(0,windowHeight),random(30,1200),random(100,1800));
+  /* Erzeugt Bild, Werte: (Pfad zum Bild > wird über Variable "bildX" reingeladen wie oben beim Vorladen definiert, X-Koordinate, Y-Koordinate, Breite, Höhe) */
+
 
   
 
 
-  frameRate(random(0.5,120)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */ 
+  frameRate(random(0.5,10)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */ 
 
 
 }
