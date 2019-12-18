@@ -25,6 +25,7 @@ let bild19;
 let bild20;
 
 
+
 //Bilder vorladen
 function preload() {
   bild1 = loadImage('imgs/bild1.png');
