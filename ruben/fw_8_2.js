@@ -82,7 +82,6 @@ function draw() {
   rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
   image(another, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
 
-
   break;
   }
 
@@ -95,5 +94,5 @@ frameRate(random(0.1,7)); /*Erzeugt nach dem Laden eines Objekts für das nächs
 function mousePressed(){
   //Alles was hier drin steht passiert beim Klick mit der Maus
  background(0);
- frameRate(30);
+ frameRate(120);
 }
