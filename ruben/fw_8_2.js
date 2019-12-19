@@ -3,24 +3,32 @@
 
 //Variablen für Bilder
 
-let brick;
-let east;
-let west;
-let yes;
-let no;
-let maybe;
-let zickzack;
+let bild1;
+let bild2;
+let bild3;
+let bild4;
+let bild5;
+let bild6;
+let bild7;
+let bild8;
+let bild9;
+let bild10;
+let bild11;
+let bild12;
+let bild13;
+let bild14;
+let bild15;
+let bild16;
+let bild17;
+let bild18;
+let bild19;
+let bild20;
 
 
 //Bilder vorladen
 function preload() {
-  brick = loadImage('imgs/brick.png');
-  east = loadImage('imgs/east.png');
-  west = loadImage('imgs/west.png');
-  yes = loadImage('imgs/yes.png');
-  no = loadImage('imgs/no.png');
-  maybe = loadImage('imgs/maybe.png');
-  zickzack = loadImage('imgs/zickzack.png');
+  bild1 = loadImage('imgs/bild1.png');
+  bild2 = loadImage('imgs/bild2.png');
   /* Jedes weitere Bild muss hier unten eingefügt werden, hierzu Zeile oberhalb kopieren 
   und von obigen Variablen bedienen, bspw. für nächste Zeile: bild3 = loadImage('imgs/bild3.png'); -> Bild entsprechend unter /ruben/imgs/ im github hochladen !!!
   AUSSERDEM: Für neues Bild ganz unten neue Einträge für die Rotation und für das Erzeugen des Bildes erstellen.
