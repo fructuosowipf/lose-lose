@@ -29,7 +29,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
-  background(0); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
+  background(255); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
   frameRate(0.5) /* Anzahl Frames pro Sekunde in Klammer schreiben */;
 }
 
@@ -58,9 +58,9 @@ function draw() {
 
   case 2:
 
-    rotate(random(5,300)); 
+    rotate(0); 
     image(brick, random(0,windowWidth), random(0,windowHeight),128,128);
-    rotate(random(5,300)); 
+    rotate(0); 
     image(brick, random(0,windowWidth), random(0,windowHeight),128,128);
 
   break;
@@ -88,9 +88,9 @@ function draw() {
 
   case 6:
   
-  rotate(random(5,300)); 
+  rotate(0); 
   image(brick, random(0,windowWidth), random(0,windowHeight),128,128);
-  rotate(random(5,300)); 
+  rotate(0); 
   image(brick, random(0,windowWidth), random(0,windowHeight),128,128);
 
 
@@ -107,13 +107,13 @@ function draw() {
   }
 
 
-frameRate(random(0.1,7)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */ 
+// frameRate(random(0.1,7)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */ 
 
 
 }
 
 function mousePressed(){
   //Alles was hier drin steht passiert beim Klick mit der Maus
- background(0);
+ background(255);
  frameRate(30);
 }
