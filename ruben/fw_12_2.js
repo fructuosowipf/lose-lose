@@ -35,7 +35,7 @@ function setup() {
 
 function draw() {
 
-  let zufall = Math.floor(Math.random() * 7) + 1 /* Dies so belassen, wählt zufällig das nächste Element */
+  let zufall = Math.floor(Math.random() * 8) + 1 /* Dies so belassen, wählt zufällig das nächste Element */
 
   /* Info zur random() Funktion, welche hier mehrmals zum Einsatz kommt, damit die Werte zufällig erzeugt werden:
   Es wird zufällig ein ganzzahliger Wert zwischen dem ersten Wert vor und dem zweiten Wert nach dem Komma erzeugt. 
@@ -114,7 +114,7 @@ function draw() {
   }
 
 
-frameRate(random(0.1,15)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */ 
+// frameRate(random(0.1,15)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */ 
 
 
 }
