@@ -24,7 +24,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(windowWidth, windowHeight);
   background(255); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
   frameRate(0.5) /* Anzahl Frames pro Sekunde in Klammer schreiben */;
 }
@@ -44,79 +44,79 @@ function draw() {
 
   switch (zufall) {
 
-  case 1:
- 
-    rotate(random(5,300)); 
-    image(east, random(0,windowWidth), random(0,windowHeight),random(100,800),random(30,400));
-   
+    case 1:
 
-  break;
-
-  case 2:
-
-    rotate(0); 
-    image(brick, random(0,windowWidth), random(0,windowHeight),128,128);
-    rotate(0); 
-    image(brick, random(0,windowWidth), random(0,windowHeight),128,128);
-
-  break;
-
-  case 3:
- 
-    rotate(random(5,300)); 
-    image(west, random(0,windowWidth), random(0,windowHeight),random(100,800),random(30,400));
-
-  break;
-
-  case 4:
-
-    rotate(random(5,300)); 
-    image(yes, random(0,windowWidth), random(0,windowHeight),random(50,700),random(10,300));
-
-  break;
-
-  case 5:
- 
-    rotate(random(5,300)); 
-    image(no, random(0,windowWidth), random(0,windowHeight),random(50,700),random(10,300));
-
-  break;
-
-  case 6:
-  
-  rotate(0); 
-  image(brick, random(0,windowWidth), random(0,windowHeight),128,128);
-  rotate(0); 
-  image(brick, random(0,windowWidth), random(0,windowHeight),128,128);
+      rotate(random(5, 300));
+      image(east, random(0, windowWidth), random(0, windowHeight), random(100, 800), random(30, 400));
 
 
-  break;
+      break;
+
+    case 2:
+
+      rotate(0);
+      image(brick, random(0, windowWidth), random(0, windowHeight), 128, 128);
+      rotate(0);
+      image(brick, random(0, windowWidth), random(0, windowHeight), 128, 128);
+
+      break;
+
+    case 3:
+
+      rotate(random(5, 300));
+      image(west, random(0, windowWidth), random(0, windowHeight), random(100, 800), random(30, 400));
+
+      break;
+
+    case 4:
+
+      rotate(random(5, 300));
+      image(yes, random(0, windowWidth), random(0, windowHeight), random(50, 700), random(10, 300));
+
+      break;
+
+    case 5:
+
+      rotate(random(5, 300));
+      image(no, random(0, windowWidth), random(0, windowHeight), random(50, 700), random(10, 300));
+
+      break;
+
+    case 6:
+
+      rotate(0);
+      image(brick, random(0, windowWidth), random(0, windowHeight), 128, 128);
+      rotate(0);
+      image(brick, random(0, windowWidth), random(0, windowHeight), 128, 128);
 
 
-  case 7:
- 
-    rotate(random(5,300)); 
-    image(maybe, random(0,windowWidth), random(0,windowHeight),random(150,1000),random(100,500));
+      break;
 
-  break;
 
-  case 8:
- 
-    rotate(random(5,300)); 
-    image(zickzack, random(0,windowWidth), random(0,windowHeight),random(500,2000),random(250,500));
+    case 7:
 
-  break;
+      rotate(random(5, 300));
+      image(maybe, random(0, windowWidth), random(0, windowHeight), random(150, 1000), random(100, 500));
+
+      break;
+
+    case 8:
+
+      rotate(random(5, 300));
+      image(zickzack, random(0, windowWidth), random(0, windowHeight), random(500, 2000), random(250, 500));
+
+      break;
 
   }
 
 
-// frameRate(random(0.1,15)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */ 
+  frameRate(random(0.1, 15)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */
 
 
 }
 
-function mousePressed(){
+function mousePressed() {
   //Alles was hier drin steht passiert beim Klick mit der Maus
- background(255);
- frameRate(30);
+  background(255);
+  frameRate(30);
 }
