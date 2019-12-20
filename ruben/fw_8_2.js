@@ -16,7 +16,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(windowWidth, windowHeight);
   background(0); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
   frameRate(0.5) /* Anzahl Frames pro Sekunde in Klammer schreiben */;
 }
@@ -36,63 +36,54 @@ function draw() {
 
   switch (zufall) {
 
-  case 1:
-  // Objekt Linie erzeugen:
-  stroke(random(0, 255),random(0,255),random(0,255)); /* Farbe der Linie. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/stroke */
-  strokeWeight(random(3,9)); /* Dicke der Linie (https://p5js.org/reference/#/p5/strokeweight) */
-  noFill(); /* Damit keine Füllung für Objekt Linie erzeugt wird, anonsten einfach auskommentieren oder entfernen */
-  line(random(0,windowWidth),random(0,windowWidth),random(0,windowHeight),random(0,windowHeight)); 
-  /* Erzeugt Linie, Werte: (X-Koordinate Verbidungspunkt 1, Y-Koordinate Verbidungspunkt 1, X-Koordinate Verbidungspunkt 2, Y-Koordinate Verbidungspunkt 2) */
-  break;
 
-  case 2:
-  //Objekt Kreis erzeugen:
-  fill(random(0, 255),random(0,255),random(0,255)); /* Farbe der Fläche. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/fill */
-  noStroke(); /* Damit Objekt keine Rahmenlinie erhält, anonsten einfach auskommentieren oder entfernen und mit stroke() Rahmen definieren */
-  square(random(0,windowWidth),random(0,windowHeight),random(1,70), 300, 250); 
-  /* Erzeugt Kreis, Werte: (X-Koordinate, Y-Koordinate, Durchmesser Kreis) */
-  break;
+    case 1:
+      //Objekt Bild erzeugen:
+      rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      image(another, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
 
-  case 3:
-  //Objekt Viereck erzeugen:
-  fill(random(0, 255),random(0,255),random(0,255)); /* Farbe der Fläche. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/fill */
-  noStroke(); /* Damit Objekt keine Rahmenlinie erhält, anonsten einfach auskommentieren oder entfernen und mit stroke() Rahmen definieren */
-  rect(random(0,windowWidth),random(0,windowHeight),random(10,80),random(1,250)); /* Erzeugt Viereck, Werte: (X-Koordinate, Y-Koordinate, Breite, Höhe) */
-  break;
+      break;
 
-  case 4:
-  //Objekt Bogen erzeugen:
-  fill(random(0, 255),random(0,255),random(0,255)); /* Farbe der Fläche. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/fill */
-  noStroke();/* Damit Objekt keine Rahmenlinie erhält, anonsten einfach auskommentieren oder entfernen und mit stroke() Rahmen definieren */
-  arc(random(0,windowWidth),random(0,windowHeight),random(7,188),random(21,210),random(0.1,3.2),random(0.1,3.2)); 
-  /* Erzeugt Bogen (Teilkreise), Werte: (X-Koordinate, Y-Koordinate, Breite, Höhe, Startwinkel, Abschlusswinkel) */
-  break;
+    case 2:
+      //Objekt Kreis erzeugen:
+      fill(random(0, 255), random(0, 255), random(150, 255)); /* Farbe der Fläche. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/fill */
+      noStroke(); /* Damit Objekt keine Rahmenlinie erhält, anonsten einfach auskommentieren oder entfernen und mit stroke() Rahmen definieren */
+      square(random(0, windowWidth), random(0, windowHeight), random(1, 150), 300, 250);
+      /* Erzeugt Kreis, Werte: (X-Koordinate, Y-Koordinate, Durchmesser Kreis) */
+      break;
 
-  case 5:
-  //Objekt Bezierkurve erzeugen:
-  noFill();
-  stroke(random(0, 255),random(0,255),random(0,255)); /* Farbe der Linie. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/stroke */
-  strokeWeight(random(9,22)); /* Dicke der Linie (https://p5js.org/reference/#/p5/strokeweight) */
-  bezier(random(0,windowWidth), random(0,windowHeight), random(0,windowWidth), random(0,windowWidth), random(0,windowWidth), random(0,windowHeight), random(0,windowWidth), random(0,windowHeight)); 
-  /* Erzeugt Bezierkurve, Werte: (X-Koordinate Verbidungspunkt 1, Y-Koordinate Verbidungspunkt 1, X-Koordinate Verbidungspunkt 2, Y-Koordinate Verbidungspunkt 2, X-Koordinate Verbidungspunkt 3, Y-Koordinate Verbidungspunkt 3, X-Koordinate Verbidungspunkt 4, Y-Koordinate Verbidungspunkt 4) */
-  break;
+    case 3:
+      //Objekt Viereck erzeugen:
+      fill(random(150, 255), random(0, 255), random(0, 255)); /* Farbe der Fläche. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/fill */
+      noStroke(); /* Damit Objekt keine Rahmenlinie erhält, anonsten einfach auskommentieren oder entfernen und mit stroke() Rahmen definieren */
+      rect(random(0, windowWidth), random(0, windowHeight), random(10, 300), random(1, 250)); /* Erzeugt Viereck, Werte: (X-Koordinate, Y-Koordinate, Breite, Höhe) */
+      break;
 
-  case 6:
-  //Objekt Bild erzeugen:
-  rotate(random(5,300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-  image(another, random(0,windowWidth), random(0,windowHeight),random(30,600),random(100,800));
+    case 4:
+      //Objekt Bogen erzeugen:
+      fill(random(0, 255), random(180, 255), random(0, 255)); /* Farbe der Fläche. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/fill */
+      noStroke();/* Damit Objekt keine Rahmenlinie erhält, anonsten einfach auskommentieren oder entfernen und mit stroke() Rahmen definieren */
+      arc(random(0, windowWidth), random(0, windowHeight), random(7, 188), random(21, 210), random(0.1, 3.2), random(0.1, 3.2));
+      /* Erzeugt Bogen (Teilkreise), Werte: (X-Koordinate, Y-Koordinate, Breite, Höhe, Startwinkel, Abschlusswinkel) */
+      break;
 
-  break;
+
+    case 6:
+      //Objekt Bild erzeugen:
+      rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      image(another, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+
+      break;
   }
 
 
-// frameRate(random(0.1,7)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */ 
+  // frameRate(random(0.1,7)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */ 
 
 
 }
 
-function mousePressed(){
+function mousePressed() {
   //Alles was hier drin steht passiert beim Klick mit der Maus
- background(0);
- frameRate(120);
+  background(0);
+  frameRate(120);
 }
