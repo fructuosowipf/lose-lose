@@ -104,6 +104,13 @@ function draw() {
 
   break;
 
+  case 7:
+ 
+    rotate(random(5,300)); 
+    image(zickzack, random(0,windowWidth), random(0,windowHeight),random(500,2000),random(250,500));
+
+  break;
+
   }
 
 
