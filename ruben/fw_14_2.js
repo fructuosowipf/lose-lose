@@ -35,7 +35,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(0); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
+  background(255); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
   frameRate(0.5) /* Anzahl Frames pro Sekunde in Klammer schreiben */;
 }
 
@@ -155,6 +155,6 @@ function draw() {
 
 function mousePressed() {
   //Alles was hier drin steht passiert beim Klick mit der Maus
-  background(0);
+  background(255);
   frameRate(120);
 }
