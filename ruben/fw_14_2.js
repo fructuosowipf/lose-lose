@@ -60,7 +60,7 @@ function draw() {
     case 1:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_b_1, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(curly_b_1, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
 
       break;
 
@@ -69,7 +69,7 @@ function draw() {
     case 2:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_b_2, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(curly_b_2, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
 
       break;
 
@@ -78,7 +78,7 @@ function draw() {
     case 3:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_b_3, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(curly_b_3, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
 
       break;
 
@@ -87,7 +87,7 @@ function draw() {
     case 4:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_b_4, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(curly_b_4, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
 
       break;
 
@@ -96,7 +96,7 @@ function draw() {
     case 5:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_b_5, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(curly_b_5, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
 
       break;
 
@@ -105,7 +105,7 @@ function draw() {
     case 6:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_w_1, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(curly_w_1, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
 
       break;
 
@@ -114,7 +114,7 @@ function draw() {
     case 7:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_w_2, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(curly_w_2, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
 
       break;
 
@@ -122,7 +122,7 @@ function draw() {
     case 8:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_w_3, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(curly_w_3, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
 
       break;
 
@@ -131,7 +131,7 @@ function draw() {
     case 9:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_w_4, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(curly_w_4, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
 
       break;
 
@@ -140,7 +140,7 @@ function draw() {
     case 10:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_w_5, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(curly_w_5, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
 
       break;
 
