@@ -42,16 +42,14 @@ function draw() {
     case 1:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(another, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(eyeball, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
 
       break;
 
     case 2:
-      //Objekt Kreis erzeugen:
-      fill(random(0, 255), random(0, 255), random(150, 255)); /* Farbe der Fläche. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/fill */
-      noStroke(); /* Damit Objekt keine Rahmenlinie erhält, anonsten einfach auskommentieren oder entfernen und mit stroke() Rahmen definieren */
-      square(random(0, windowWidth), random(0, windowHeight), random(1, 150), 300, 250);
-      /* Erzeugt Kreis, Werte: (X-Koordinate, Y-Koordinate, Durchmesser Kreis) */
+      //Objekt Bild erzeugen:
+      rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      image(eyeball, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
       break;
 
     case 3:
@@ -62,26 +60,27 @@ function draw() {
       break;
 
     case 4:
-      //Objekt Bogen erzeugen:
-      fill(random(0, 255), random(180, 255), random(0, 255)); /* Farbe der Fläche. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/fill */
-      noStroke();/* Damit Objekt keine Rahmenlinie erhält, anonsten einfach auskommentieren oder entfernen und mit stroke() Rahmen definieren */
-      arc(random(0, windowWidth), random(0, windowHeight), random(7, 188), random(21, 210), random(0.1, 3.2), random(0.1, 3.2));
-      /* Erzeugt Bogen (Teilkreise), Werte: (X-Koordinate, Y-Koordinate, Breite, Höhe, Startwinkel, Abschlusswinkel) */
+      //Objekt Bezierkurve erzeugen:
+      noFill();
+      stroke(random(0, 255), random(0, 255), random(0, 255)); /* Farbe der Linie. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/stroke */
+      strokeWeight(random(9, 22)); /* Dicke der Linie (https://p5js.org/reference/#/p5/strokeweight) */
+      bezier(random(0, windowWidth), random(0, windowHeight), random(0, windowWidth), random(0, windowWidth), random(0, windowWidth), random(0, windowHeight), random(0, windowWidth), random(0, windowHeight));
+      /* Erzeugt Bezierkurve, Werte: (X-Koordinate Verbidungspunkt 1, Y-Koordinate Verbidungspunkt 1, X-Koordinate Verbidungspunkt 2, Y-Koordinate Verbidungspunkt 2, X-Koordinate Verbidungspunkt 3, Y-Koordinate Verbidungspunkt 3, X-Koordinate Verbidungspunkt 4, Y-Koordinate Verbidungspunkt 4) */
+      break;
+
+
+    case 5:
+      //Objekt Bild erzeugen:
+      rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      image(eyetits, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+
       break;
 
 
     case 6:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(another, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
-
-      break;
-
-
-    case 6:
-      //Objekt Bild erzeugen:
-      rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(another, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(eyetits, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
 
       break;
   }
