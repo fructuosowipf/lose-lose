@@ -42,7 +42,7 @@ function draw() {
     case 1:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(eyeball, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(eyetits, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
 
       break;
 
@@ -72,7 +72,7 @@ function draw() {
     case 5:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(eyetits, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(eyeball, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
 
       break;
 
