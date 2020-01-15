@@ -44,12 +44,12 @@
         }
       }
 
-      let scriptSource = jsSource();
+     
 
       var script = document.createElement('script');
       script.type = 'text/javascript';
       script.async = true;
-      script.src = scriptSource;
+      script.src =  jsSource();
       var body = document.getElementsByTagName('body')[0];
       body.appendChild(script);
 
