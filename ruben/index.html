@@ -28,11 +28,7 @@
 
      console.log('var: ' + sourceScript);
 
-      var script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.async = true;
-      script.src =  sourceScript;
-      $('body').append(script);
+     $('body').append('<script src='+jsSource()+' type="text/javascript" async>');
 
       // $('#datejs').attr('src','fw_8_2.js');
 
