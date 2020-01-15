@@ -2,6 +2,21 @@
 <html lang="en">
 
 <head>
+  
+  <script>
+    $(function(){
+      let d = new Date();
+      let day = d.getDate();
+
+      $('#datejs').attr('src','fw_8_2.js');
+
+      console.log(day);
+
+
+    });
+
+
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -32,19 +47,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js" crossorigin="anonymous"></script>
   <script id="datejs" src="fw_16_2.js"></script>
 
-  <script>
-    $(function(){
-      let d = new Date();
-      let day = d.getDate();
-
-
-      console.log(day);
-
-
-    });
-
-
-  </script>
 
 
 </body>
