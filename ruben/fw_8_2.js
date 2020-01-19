@@ -40,7 +40,7 @@ function draw() {
     case 1:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(another, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(another, random(0, windowWidth), random(0, windowHeight), random(2000, 5000), random(1500, 3800));
 
       break;
 
@@ -48,7 +48,7 @@ function draw() {
       //Objekt Kreis erzeugen:
       fill(random(0, 255), random(0, 255), random(150, 255)); /* Farbe der Fläche. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/fill */
       noStroke(); /* Damit Objekt keine Rahmenlinie erhält, anonsten einfach auskommentieren oder entfernen und mit stroke() Rahmen definieren */
-      square(random(0, windowWidth), random(0, windowHeight), random(1, 150), 300, 250);
+      square(random(0, windowWidth), random(0, windowHeight), random(500, 1500), 3000, 2500);
       /* Erzeugt Kreis, Werte: (X-Koordinate, Y-Koordinate, Durchmesser Kreis) */
       break;
 
@@ -56,7 +56,7 @@ function draw() {
       //Objekt Viereck erzeugen:
       fill(random(150, 255), random(0, 255), random(0, 255)); /* Farbe der Fläche. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/fill */
       noStroke(); /* Damit Objekt keine Rahmenlinie erhält, anonsten einfach auskommentieren oder entfernen und mit stroke() Rahmen definieren */
-      rect(random(0, windowWidth), random(0, windowHeight), random(10, 300), random(1, 250)); /* Erzeugt Viereck, Werte: (X-Koordinate, Y-Koordinate, Breite, Höhe) */
+      rect(random(0, windowWidth), random(0, windowHeight), random(800, 3000), random(1000, 5200)); /* Erzeugt Viereck, Werte: (X-Koordinate, Y-Koordinate, Breite, Höhe) */
       break;
 
     case 4:
@@ -71,7 +71,7 @@ function draw() {
     case 6:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(another, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(another, random(0, windowWidth), random(0, windowHeight), random(1300, 6800), random(800, 4000));
 
       break;
   }
