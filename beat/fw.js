@@ -17,7 +17,7 @@ let bild8;
 
 //Bilder vorladen
 function preload() {
-  hintergrund = loadImage('imgs/hintergrund4.jpg')
+  hintergrund = loadImage('imgs/hintergrund4.JPG')
   bild1 = loadImage('imgs/bild1.png');
   bild2 = loadImage('imgs/bild2.png');
   bild3 = loadImage('imgs/bild3.png');
