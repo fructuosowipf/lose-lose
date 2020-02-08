@@ -35,14 +35,14 @@ function draw() {
   */
 
   switch (zufall) {
-
-
     case 1:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(another, random(0, windowWidth), random(0, windowHeight), random(500, 2000), random(500, 1600));
+      image(another, random(0, windowWidth), random(0, windowHeight), random(400, 1400), random(200, 1000));
 
       break;
+
+    
 
     case 2:
       //Objekt Kreis erzeugen:
@@ -65,6 +65,13 @@ function draw() {
       noStroke();/* Damit Objekt keine Rahmenlinie erhält, anonsten einfach auskommentieren oder entfernen und mit stroke() Rahmen definieren */
       arc(random(0, windowWidth), random(0, windowHeight), random(70, 750), random(77, 610), random(0.1, 3.2), random(0.1, 3.2));
       /* Erzeugt Bogen (Teilkreise), Werte: (X-Koordinate, Y-Koordinate, Breite, Höhe, Startwinkel, Abschlusswinkel) */
+      break;
+
+      case 5:
+      //Objekt Bild erzeugen:
+      rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      image(another, random(0, windowWidth), random(0, windowHeight), random(500, 2000), random(500, 1600));
+
       break;
 
 
