@@ -3,7 +3,7 @@
 
 //Variablen für Bilder
 
-let background;
+let hintergrund;
 let bild1;
 let bild2;
 let bild3;
