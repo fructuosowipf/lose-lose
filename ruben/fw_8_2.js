@@ -40,7 +40,7 @@ function draw() {
     case 1:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(another, random(0, windowWidth), random(0, windowHeight), random(800, 2800), random(700, 2200));
+      image(another, random(0, windowWidth), random(0, windowHeight), random(500, 2800), random(700, 2200));
 
       break;
 
