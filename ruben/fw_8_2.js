@@ -40,7 +40,7 @@ function draw() {
     case 1:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(another, random(0, windowWidth), random(0, windowHeight), random(500, 2800), random(700, 2200));
+      image(another, random(0, windowWidth), random(0, windowHeight), random(500, 2000), random(500, 1600));
 
       break;
 
@@ -56,14 +56,14 @@ function draw() {
       //Objekt Viereck erzeugen:
       fill(random(150, 255), random(0, 255), random(0, 255)); /* Farbe der Fläche. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/fill */
       noStroke(); /* Damit Objekt keine Rahmenlinie erhält, anonsten einfach auskommentieren oder entfernen und mit stroke() Rahmen definieren */
-      rect(random(0, windowWidth), random(0, windowHeight), random(100, 900), random(30, 1250)); /* Erzeugt Viereck, Werte: (X-Koordinate, Y-Koordinate, Breite, Höhe) */
+      rect(random(0, windowWidth), random(0, windowHeight), random(100, 700), random(30, 1050)); /* Erzeugt Viereck, Werte: (X-Koordinate, Y-Koordinate, Breite, Höhe) */
       break;
 
     case 4:
       //Objekt Bogen erzeugen:
       fill(random(0, 255), random(180, 255), random(0, 255)); /* Farbe der Fläche. Werte: (ROT, GRUEN, BLAU) von 0-255, mehr: https://p5js.org/reference/#/p5/fill */
       noStroke();/* Damit Objekt keine Rahmenlinie erhält, anonsten einfach auskommentieren oder entfernen und mit stroke() Rahmen definieren */
-      arc(random(0, windowWidth), random(0, windowHeight), random(70, 988), random(77, 610), random(0.1, 3.2), random(0.1, 3.2));
+      arc(random(0, windowWidth), random(0, windowHeight), random(70, 750), random(77, 610), random(0.1, 3.2), random(0.1, 3.2));
       /* Erzeugt Bogen (Teilkreise), Werte: (X-Koordinate, Y-Koordinate, Breite, Höhe, Startwinkel, Abschlusswinkel) */
       break;
 
@@ -71,7 +71,7 @@ function draw() {
     case 6:
       //Objekt Bild erzeugen:
       rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(another, random(0, windowWidth), random(0, windowHeight), random(400, 1800), random(200, 1200));
+      image(another, random(0, windowWidth), random(0, windowHeight), random(400, 1400), random(200, 1000));
 
       break;
   }
