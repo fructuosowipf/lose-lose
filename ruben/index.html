@@ -30,10 +30,10 @@
      console.log('var: ' + sourceScript);
 
     
-     $('body').append('<script src='+jsSource()+' type="text/javascript" async>');
+     //$('body').append('<script src='+jsSource()+' type="text/javascript" async>');
     
 
-      // $('#datejs').attr('src','fw_8_2.js');
+      $('#datejs').attr('src',jsSource());
 
     });
   </script>
@@ -65,7 +65,7 @@
   
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js" crossorigin="anonymous"></script>
-  <!-- <script id="datejs" src="fw_8_2.js"></script> -->
+  <script id="datejs" src="fw_8_2.js"></script>
 
 
 
