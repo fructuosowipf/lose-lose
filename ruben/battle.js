@@ -110,7 +110,7 @@ function draw() {
 
 
 
-  frameRate(random(20, 70)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */
+  frameRate(random(0.1, 1)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */
 
 
 }
