@@ -56,49 +56,49 @@ function draw() {
 
     case 1:
       //Objekt Bild erzeugen:
-      rotate(0,180); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      random(rotate(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
       image(battle1, 0, 0, windowWidth, windowHeight);
 
       break;
     case 2:
       //Objekt Bild erzeugen:
-      rotate(0,180); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      random(rotate(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
       image(battle2, 0, 0, windowWidth, windowHeight);
 
       break;
     case 3:
       //Objekt Bild erzeugen:
-      rotate(0,180); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      random(rotate(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
       image(battle3, 0, 0, windowWidth, windowHeight);
 
       break;
     case 4:
       //Objekt Bild erzeugen:
-      rotate(0,180); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      random(rotate(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
       image(battle4, 0, 0, windowWidth, windowHeight);
 
       break;
     case 5:
       //Objekt Bild erzeugen:
-      rotate(0,180); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      random(rotate(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
       image(battle5, 0, 0, windowWidth, windowHeight);
 
       break;
     case 6:
       //Objekt Bild erzeugen:
-      rotate(0,180); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      random(rotate(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
       image(battle6, 0, 0, windowWidth, windowHeight);
 
       break;
     case 7:
       //Objekt Bild erzeugen:
-      rotate(0,180); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      random(rotate(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
       image(battle7, 0, 0, windowWidth, windowHeight);
 
       break;
     case 8:
       //Objekt Bild erzeugen:
-      rotate(0,180); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      random(rotate(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
       image(battle8, 0, 0, windowWidth, windowHeight);
 
       break;
