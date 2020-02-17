@@ -3,30 +3,27 @@
 
 //Variablen für Bilder
 
-let curly_b_1;
-let curly_b_2;
-let curly_b_3;
-let curly_b_4;
-let curly_b_5;
-let curly_w_1;
-let curly_w_2;
-let curly_w_3;
-let curly_w_4;
-let curly_w_5;
+let battle1;
+let battle2;
+let battle3;
+let battle4;
+let battle5;
+let battle6;
+let battle7;
+let battle8;
 
 
 //Bilder vorladen
 function preload() {
-  curly_b_1 = loadImage('imgs/curly_b_1.png');
-  curly_b_2 = loadImage('imgs/curly_b_2.png');
-  curly_b_3 = loadImage('imgs/curly_b_3.png');
-  curly_b_4 = loadImage('imgs/curly_b_4.png');
-  curly_b_5 = loadImage('imgs/curly_b_5.png');
-  curly_w_1 = loadImage('imgs/curly_w_1.png');
-  curly_w_2 = loadImage('imgs/curly_w_2.png');
-  curly_w_3 = loadImage('imgs/curly_w_3.png');
-  curly_w_4 = loadImage('imgs/curly_w_4.png');
-  curly_w_5 = loadImage('imgs/curly_w_5.png');
+    battle1 = loadImage('imgs/battle/battle1.png');
+    battle2 = loadImage('imgs/battle/battle2.png');
+    battle3 = loadImage('imgs/battle/battle3.png');
+    battle4 = loadImage('imgs/battle/battle4.png');
+    battle5 = loadImage('imgs/battle/battle5.png');
+    battle6 = loadImage('imgs/battle/battle6.png');
+    battle7 = loadImage('imgs/battle/battle7.png');
+    battle8 = loadImage('imgs/battle/battle8.png');
+
   /* Jedes weitere Bild muss hier unten eingefügt werden, hierzu Zeile oberhalb kopieren 
   und von obigen Variablen bedienen, bspw. für nächste Zeile: bild3 = loadImage('imgs/bild3.png'); -> Bild entsprechend unter /ruben/imgs/ im github hochladen !!!
   AUSSERDEM: Für neues Bild ganz unten neue Einträge für die Rotation und für das Erzeugen des Bildes erstellen.
@@ -41,7 +38,7 @@ function setup() {
 
 function draw() {
 
-  let zufall = Math.floor(Math.random() * 10) + 1 /* Dies so belassen, wählt zufällig das nächste Element */
+  let zufall = Math.floor(Math.random() * 8) + 1 /* Dies so belassen, wählt zufällig das nächste Element */
 
   /* Info zur random() Funktion, welche hier mehrmals zum Einsatz kommt, damit die Werte zufällig erzeugt werden:
   Es wird zufällig ein ganzzahliger Wert zwischen dem ersten Wert vor und dem zweiten Wert nach dem Komma erzeugt. 
@@ -59,91 +56,14 @@ function draw() {
 
     case 1:
       //Objekt Bild erzeugen:
-      rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_b_1, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
+      rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      image(battle1, 0, 0, windowWidth, windowHeight);
 
       break;
 
 
 
-    case 2:
-      //Objekt Bild erzeugen:
-      rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_b_2, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
-
-      break;
-
-
-
-    case 3:
-      //Objekt Bild erzeugen:
-      rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_b_3, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
-
-      break;
-
-
-
-    case 4:
-      //Objekt Bild erzeugen:
-      rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_b_4, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
-
-      break;
-
-
-
-    case 5:
-      //Objekt Bild erzeugen:
-      rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_b_5, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
-
-      break;
-
-
-
-    case 6:
-      //Objekt Bild erzeugen:
-      rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_w_1, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
-
-      break;
-
-
-
-    case 7:
-      //Objekt Bild erzeugen:
-      rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_w_2, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
-
-      break;
-
-
-    case 8:
-      //Objekt Bild erzeugen:
-      rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_w_3, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
-
-      break;
-
-
-
-    case 9:
-      //Objekt Bild erzeugen:
-      rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_w_4, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
-
-      break;
-
-
-
-    case 10:
-      //Objekt Bild erzeugen:
-      rotate(random(5, 300)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      image(curly_w_5, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
-
-      break;
-
+   
   }
 
 
