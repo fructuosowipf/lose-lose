@@ -108,7 +108,6 @@ function draw() {
       image(curly_w_1, random(0, windowWidth), random(0, windowHeight), random(90, 400), random(90, 400));
 
       break;
-curly_v2/
 
 
     case 7:
