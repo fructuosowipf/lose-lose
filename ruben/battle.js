@@ -117,6 +117,6 @@ function draw() {
 
 function mousePressed() {
   //Alles was hier drin steht passiert beim Klick mit der Maus
-  background(255);
-  frameRate(120);
+  save('myCanvas.png');
+  return false;
 }
