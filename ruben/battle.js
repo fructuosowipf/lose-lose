@@ -42,6 +42,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(0); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
   frameRate(0.5) /* Anzahl Frames pro Sekunde in Klammer schreiben */;
+  image(logo, 100, 100, 382, 56);
   /* h1 = createElement('h1', 'fructuoso/wipf');
   h1. position(400,100); */
 }
@@ -120,7 +121,7 @@ function draw() {
 
   }
 
-  image(logo, 100, 100, 382, 56);
+  
   frameRate(random(0.1, 1)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */
 
 /*   $(window).resize(function () {
