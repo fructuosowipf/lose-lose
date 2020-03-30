@@ -141,7 +141,7 @@ function keyPressed() {
 
   //Alles was hier drin steht passiert beim Klick mit der Maus
 
-  if (keyCode === SPACE) {
+  if (keyCode === ENTER) {
 
   let jetzt = new Date();
   let tag = jetzt.getDate();
