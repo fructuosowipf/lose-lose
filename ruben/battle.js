@@ -152,10 +152,10 @@ function mousePressed() {
 
 
 
-  let stempel = '_' + adresse.ip + '_' + jahr + '_' + monat + '_' + tag + '_' + stunden + '_' + minuten + '_' + sekunden;
+  let stempel = '_' + jahr + '_' + monat + '_' + tag + '_' + stunden + '_' + minuten + '_' + sekunden;
 
 
-  save('fructuosowipf_loose_loose_loose' + stempel + '.jpg');
+  save('fructuosowipf_loose_loose_loose_' + adresse.ip + stempel + '.jpg');
 
   return false;
 
