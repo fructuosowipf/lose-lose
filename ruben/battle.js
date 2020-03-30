@@ -39,8 +39,9 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(0); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
-  createP('fructuoso/wipf');
   frameRate(0.5) /* Anzahl Frames pro Sekunde in Klammer schreiben */;
+  h1 = createElement('h1', 'fructuoso/wipf');
+  h1. position(400,100);
 }
 
 function draw() {
@@ -66,6 +67,7 @@ function draw() {
       rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
 
       image(battle1, 0, 0, windowWidth, windowHeight);
+
 
       break;
     case 2:
