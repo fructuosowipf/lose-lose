@@ -1,3 +1,5 @@
+$(function(){
+
 /* Für weiterführende Infos findet man die ganze Dokumentation von p5js unter: https://p5js.org/reference/ */
 
 $.getJSON("https://api.ipify.org/?format=json", function (json) {
@@ -171,3 +173,5 @@ function keyPressed() {
 
 
 }
+
+});
