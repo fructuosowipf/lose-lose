@@ -39,7 +39,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(0); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
-  createElement('h1', 'fructuoso/wipf');
+  createP('fructuoso/wipf');
   frameRate(0.5) /* Anzahl Frames pro Sekunde in Klammer schreiben */;
 }
 
