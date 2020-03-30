@@ -147,7 +147,7 @@ function mousePressed() {
   let sekunden = jetzt.getSeconds();
 
   $.getJSON("https://api.ipify.org/?format=json", function (json) {
-    adresse = json;
+    unique = json.ip.split('.').join("-");
   });
 
 
@@ -155,7 +155,7 @@ function mousePressed() {
   let stempel = '_' + jahr + '_' + monat + '_' + tag + '_' + stunden + '_' + minuten + '_' + sekunden;
 
 
-  save('fructuosowipf_loose_loose_loose_' + adresse.ip + stempel + '.jpg');
+  save('fructuosowipf_loose_loose_loose_' + unique + stempel + '.jpg');
 
   return false;
 
