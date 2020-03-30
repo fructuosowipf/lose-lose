@@ -165,7 +165,7 @@ function keyPressed() {
 
   save('fructuosowipf_loose_loose_loose_' + unique + stempel + '.jpg');
 } else {
-  console.log('not space!');
+  
 }
   return false;
 
