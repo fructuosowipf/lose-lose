@@ -128,7 +128,7 @@ function mousePressed() {
 //Alles was hier drin steht passiert beim Klick mit der Maus
 
   let jetzt = new Date();
-  let tag = jetzt.D();
+  let tag = jetzt.getDate();
   let monat = jetzt.getMonth() + 1;
   let jahr = jetzt.getFullYear();
   let stunden = jetzt.getHours();
