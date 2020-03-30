@@ -4,6 +4,9 @@ $.getJSON("https://api.ipify.org/?format=json", function (json) {
   unique = json.ip.split('.').join("-");
 });
 
+$('#mylightbox').hide();
+$.featherlight('#mylightbox');
+
 //Variablen für Bilder
 
 let battle1;
