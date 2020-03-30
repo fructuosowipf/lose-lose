@@ -122,13 +122,13 @@ function draw() {
 
   $( window ).resize(function() {
     createCanvas(windowWidth, windowHeight);
-        background(0);
+        background(255);
         redraw();
       });
     
       $( window ).on('orientationchange', function(){
         createCanvas(windowWidth, windowHeight);
-        background(0);
+        background(255);
         redraw();
       })
 
