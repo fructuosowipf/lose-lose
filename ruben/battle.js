@@ -148,6 +148,6 @@ function mousePressed() {
   let stempel = jahr + '_' + monat + '_' + tag + '_' + stunden + '_' + minuten + '_' + sekunden; 
 
   
-  save('fructuosowipf_loose_loose_loose' + stempel + '.jpg');
+  save('fructuosowipf_loose_loose_loose_' + stempel + '.jpg');
   return false;
 }
