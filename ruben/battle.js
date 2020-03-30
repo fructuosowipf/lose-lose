@@ -137,7 +137,7 @@ function draw() {
 
 }
 
-function mousePressed() {
+function keyPressed() {
 
   //Alles was hier drin steht passiert beim Klick mit der Maus
 
