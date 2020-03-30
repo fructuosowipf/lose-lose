@@ -69,7 +69,8 @@ function draw() {
       //Objekt Bild erzeugen:
       rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
       image(battle1, 0, 0, windowWidth, windowHeight);
-     
+      rotate(0);
+      image(logo, windowWidth-(windowWidth/100), windowHeight-(windowHeight/100), 382, 56);
 
 
       break;
@@ -77,43 +78,50 @@ function draw() {
       //Objekt Bild erzeugen:
       rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
       image(battle2, 0, 0, windowWidth, windowHeight);
-
+      rotate(0);
+      image(logo, windowWidth-(windowWidth/100), windowHeight-(windowHeight/100), 382, 56);
       break;
     case 3:
       //Objekt Bild erzeugen:
       rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
       image(battle3, 0, 0, windowWidth, windowHeight);
-
+      rotate(0);
+      image(logo, windowWidth-(windowWidth/100), windowHeight-(windowHeight/100), 382, 56);
       break;
     case 4:
       //Objekt Bild erzeugen:
       rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
       image(battle4, 0, 0, windowWidth, windowHeight);
-
+      rotate(0);
+      image(logo, windowWidth-(windowWidth/100), windowHeight-(windowHeight/100), 382, 56);
       break;
     case 5:
       //Objekt Bild erzeugen:
       rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
       image(battle5, 0, 0, windowWidth, windowHeight);
-
+      rotate(0);
+      image(logo, windowWidth-(windowWidth/100), windowHeight-(windowHeight/100), 382, 56);
       break;
     case 6:
       //Objekt Bild erzeugen:
       rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
       image(battle6, 0, 0, windowWidth, windowHeight);
-
+      rotate(0);
+      image(logo, windowWidth-(windowWidth/100), windowHeight-(windowHeight/100), 382, 56);
       break;
     case 7:
       //Objekt Bild erzeugen:
       rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
       image(battle7, 0, 0, windowWidth, windowHeight);
-
+      rotate(0);
+      image(logo, windowWidth-(windowWidth/100), windowHeight-(windowHeight/100), 382, 56);
       break;
     case 8:
       //Objekt Bild erzeugen:
       rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
       image(battle8, 0, 0, windowWidth, windowHeight);
-
+      rotate(0);
+      image(logo, windowWidth-(windowWidth/100), windowHeight-(windowHeight/100), 382, 56);
       break;
 
 
@@ -121,8 +129,7 @@ function draw() {
 
   }
 
-  rotate(0);
-  image(logo, 100, 100, 382, 56);
+
   frameRate(random(0.1, 1)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */
 
 /*   $(window).resize(function () {
