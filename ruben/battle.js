@@ -36,6 +36,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(0); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
+  createElement('h1', 'fructuoso/wipf');
   frameRate(0.5) /* Anzahl Frames pro Sekunde in Klammer schreiben */;
 }
 
@@ -51,8 +52,6 @@ function draw() {
   windowHeight = Höhe des Browserfenster beim Laden der Webseite
   
   */
-
- createElement('h2', 'im an h2 p5.element!');
 
   switch (zufall) {
 
