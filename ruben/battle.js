@@ -52,6 +52,8 @@ function draw() {
   
   */
 
+ createElement('h2', 'im an h2 p5.element!');
+
   switch (zufall) {
 
 
