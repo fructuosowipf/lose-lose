@@ -116,7 +116,19 @@ function draw() {
 }
 
 function mousePressed() {
-  //Alles was hier drin steht passiert beim Klick mit der Maus
-  save('myCanvas.png');
+
+//Alles was hier drin steht passiert beim Klick mit der Maus
+
+  let jetzt = new Date();
+  let tag = jetzt.D();
+  let monat = jetzt.getMonth() + 1;
+  let jahr = jetzt.getFullYear();
+  let stunden = jetzt.getHours();
+  let minuten = jetzt.getMinutes(); 
+  let sekunden = jetzt.getSeconds();
+  let stempel = jahr + '_' + monat + '_' + tag + '_' + stunden + '_' + minuten + '_' + sekunden; 
+
+  
+  save('fructuosowipf_loose_loose_loose' + stempel + '.jpg');
   return false;
 }
