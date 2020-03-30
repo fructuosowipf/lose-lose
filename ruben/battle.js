@@ -35,7 +35,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(255); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
+  background(0); /* Hintergrundfarbe ändern https://p5js.org/reference/#/p5/background */
   frameRate(0.5) /* Anzahl Frames pro Sekunde in Klammer schreiben */;
 }
 
@@ -125,13 +125,13 @@ function draw() {
 
   $(window).resize(function () {
     createCanvas(windowWidth, windowHeight);
-    background(255);
+    background(0);
     redraw();
   });
 
   $(window).on('orientationchange', function () {
     createCanvas(windowWidth, windowHeight);
-    background(255);
+    background(0);
     redraw();
   })
 
