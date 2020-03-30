@@ -14,29 +14,37 @@
     font-style: normal;
 }
 
-
-body{
-    margin:0;
+body {
+    margin: 0;
     overflow: hidden;
-  }
+}
 
 /* ^^^ Alles hier oben besser sein lassen ^^^ */
+
 /* vvv Ab hier kann verändert werden      vvv */
 
 h1 {
     font-family: 'Bodoni';
-    color: #ffffff; /* Schriftfarbe des Textes auf Webseite, um HEX-Code von anderer Farbe zu generieren: https://htmlcolorcodes.com/color-picker/ */
-    position: absolute; /* better don't touch */
-    bottom: 1%; /* Wie viel Prozent von UNTEN der Text positioniert wird */
-    right: 1%; /* Wie viel Prozent von RECHTS der Text positioniert wird */
-    font-size: 3em; /* Schriftgrösse des Textes */
-    margin: 0; /* better don't touch */
+    color: #ffffff;
+    /* Schriftfarbe des Textes auf Webseite, um HEX-Code von anderer Farbe zu generieren: https://htmlcolorcodes.com/color-picker/ */
+    position: absolute;
+    /* better don't touch */
+    bottom: 1%;
+    /* Wie viel Prozent von UNTEN der Text positioniert wird */
+    right: 1%;
+    /* Wie viel Prozent von RECHTS der Text positioniert wird */
+    font-size: 3em;
+    /* Schriftgrösse des Textes */
+    margin: 0;
+    /* better don't touch */
 }
 
 #mylightbox {
-    display:none;
+    display: none;
     font-family: 'Avenir';
-  }
-  .featherlight .featherlight-inner {
+    font-size: xx-large;
+}
+
+.featherlight .featherlight-inner {
     display: block !important;
-  }
+}
