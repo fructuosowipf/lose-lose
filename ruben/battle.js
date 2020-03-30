@@ -57,48 +57,56 @@ function draw() {
     case 1:
       //Objekt Bild erzeugen:
       rotate(random(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      tint(255, 127); // Display at half opacity
       image(battle1, 0, 0, windowWidth, windowHeight);
 
       break;
     case 2:
       //Objekt Bild erzeugen:
       rotate(random(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      tint(255, 127); // Display at half opacity
       image(battle2, 0, 0, windowWidth, windowHeight);
 
       break;
     case 3:
       //Objekt Bild erzeugen:
       rotate(random(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      tint(255, 127); // Display at half opacity
       image(battle3, 0, 0, windowWidth, windowHeight);
 
       break;
     case 4:
       //Objekt Bild erzeugen:
       rotate(random(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      tint(255, 127); // Display at half opacity
       image(battle4, 0, 0, windowWidth, windowHeight);
 
       break;
     case 5:
       //Objekt Bild erzeugen:
       rotate(random(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      tint(255, 127); // Display at half opacity
       image(battle5, 0, 0, windowWidth, windowHeight);
 
       break;
     case 6:
       //Objekt Bild erzeugen:
       rotate(random(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      tint(255, 127); // Display at half opacity
       image(battle6, 0, 0, windowWidth, windowHeight);
 
       break;
     case 7:
       //Objekt Bild erzeugen:
       rotate(random(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      tint(255, 127); // Display at half opacity
       image(battle7, 0, 0, windowWidth, windowHeight);
 
       break;
     case 8:
       //Objekt Bild erzeugen:
       rotate(random(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+      tint(255, 127); // Display at half opacity
       image(battle8, 0, 0, windowWidth, windowHeight);
 
       break;
