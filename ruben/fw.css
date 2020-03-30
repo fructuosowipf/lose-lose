@@ -32,3 +32,10 @@ h1 {
     font-size: 5.5em; /* Schriftgrösse des Textes */
     margin: 0; /* better don't touch */
 }
+
+#mylightbox {
+    display:none;
+  }
+  .featherlight .featherlight-inner {
+    display: block !important;
+  }
