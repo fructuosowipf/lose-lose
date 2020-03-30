@@ -157,10 +157,13 @@ function keyPressed() {
   let stempel = '_' + jahr + '_' + monat + '_' + tag + '_' + stunden + '_' + minuten + '_' + sekunden;
 
   save('fructuosowipf_loose_loose_loose_' + unique + stempel + '.jpg');
+
+  return false;
+
 } else {
   
 }
-  return false;
+  
 
 
 
