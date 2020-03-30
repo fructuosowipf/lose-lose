@@ -149,14 +149,14 @@ function mousePressed() {
   $.getJSON("https://api.ipify.org/?format=json", function (json) {
     adresse = json;
   });
-  let ip = adresse.ip;
 
 
-  let stempel = '_' + ip + '_' + jahr + '_' + monat + '_' + tag + '_' + stunden + '_' + minuten + '_' + sekunden;
+
+  let stempel = '_' + adresse.ip + '_' + jahr + '_' + monat + '_' + tag + '_' + stunden + '_' + minuten + '_' + sekunden;
 
 
   save('fructuosowipf_loose_loose_loose' + stempel + '.jpg');
 
   return false;
-  
+
 }
