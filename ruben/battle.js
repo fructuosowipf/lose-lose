@@ -50,7 +50,7 @@ function setup() {
 function draw() {
 
   // rotate(0);
-  image(logo, windowWidth-(windowWidth/100), windowHeight-(windowHeight/100), 382, 56);
+  image(logo, windowWidth-382-(windowWidth/100), windowHeight-56-(windowHeight/100), 382, 56);
 
   let zufall = Math.floor(Math.random() * 8) + 1 /* Dies so belassen, wählt zufällig das nächste Element */
 
