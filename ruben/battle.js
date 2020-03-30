@@ -120,6 +120,17 @@ function draw() {
 
   frameRate(random(0.1, 1)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */
 
+  $( window ).resize(function() {
+    createCanvas(windowWidth, windowHeight);
+        background(0);
+        redraw();
+      });
+    
+      $( window ).on('orientationchange', function(){
+        createCanvas(windowWidth, windowHeight);
+        background(0);
+        redraw();
+      })
 
 }
 
