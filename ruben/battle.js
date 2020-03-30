@@ -15,14 +15,14 @@ let battle8;
 
 //Bilder vorladen
 function preload() {
-    battle1 = loadImage('imgs/battle/battle1.png');
-    battle2 = loadImage('imgs/battle/battle2.png');
-    battle3 = loadImage('imgs/battle/battle3.png');
-    battle4 = loadImage('imgs/battle/battle4.png');
-    battle5 = loadImage('imgs/battle/battle5.png');
-    battle6 = loadImage('imgs/battle/battle6.png');
-    battle7 = loadImage('imgs/battle/battle7.png');
-    battle8 = loadImage('imgs/battle/battle8.png');
+  battle1 = loadImage('imgs/battle/battle1.png');
+  battle2 = loadImage('imgs/battle/battle2.png');
+  battle3 = loadImage('imgs/battle/battle3.png');
+  battle4 = loadImage('imgs/battle/battle4.png');
+  battle5 = loadImage('imgs/battle/battle5.png');
+  battle6 = loadImage('imgs/battle/battle6.png');
+  battle7 = loadImage('imgs/battle/battle7.png');
+  battle8 = loadImage('imgs/battle/battle8.png');
 
   /* Jedes weitere Bild muss hier unten eingefügt werden, hierzu Zeile oberhalb kopieren 
   und von obigen Variablen bedienen, bspw. für nächste Zeile: bild3 = loadImage('imgs/bild3.png'); -> Bild entsprechend unter /ruben/imgs/ im github hochladen !!!
@@ -56,98 +56,107 @@ function draw() {
 
     case 1:
       //Objekt Bild erzeugen:
-      rotate(random(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      
+      rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+
       image(battle1, 0, 0, windowWidth, windowHeight);
 
       break;
     case 2:
       //Objekt Bild erzeugen:
-      rotate(random(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      
+      rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+
       image(battle2, 0, 0, windowWidth, windowHeight);
 
       break;
     case 3:
       //Objekt Bild erzeugen:
-      rotate(random(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      
+      rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+
       image(battle3, 0, 0, windowWidth, windowHeight);
 
       break;
     case 4:
       //Objekt Bild erzeugen:
-      rotate(random(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      
+      rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+
       image(battle4, 0, 0, windowWidth, windowHeight);
 
       break;
     case 5:
       //Objekt Bild erzeugen:
-      rotate(random(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      
+      rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+
       image(battle5, 0, 0, windowWidth, windowHeight);
 
       break;
     case 6:
       //Objekt Bild erzeugen:
-      rotate(random(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      
+      rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+
       image(battle6, 0, 0, windowWidth, windowHeight);
 
       break;
     case 7:
       //Objekt Bild erzeugen:
-      rotate(random(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      
+      rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+
       image(battle7, 0, 0, windowWidth, windowHeight);
 
       break;
     case 8:
       //Objekt Bild erzeugen:
-      rotate(random(0,180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
-      
+      rotate(random(0, 180)); /* Rotation des Bildes, Angabe des Rotationswinkels in der Klammer */
+
       image(battle8, 0, 0, windowWidth, windowHeight);
 
       break;
 
 
 
-   
+
   }
 
 
 
   frameRate(random(0.1, 1)); /*Erzeugt nach dem Laden eines Objekts für das nächste Objekt eine neue Geschwindigkeit, dadurch wird eine unregelmässige Geschwindigkeit erzeugt. */
 
-  $( window ).resize(function() {
+  $(window).resize(function () {
     createCanvas(windowWidth, windowHeight);
-        background(255);
-        redraw();
-      });
-    
-      $( window ).on('orientationchange', function(){
-        createCanvas(windowWidth, windowHeight);
-        background(255);
-        redraw();
-      })
+    background(255);
+    redraw();
+  });
+
+  $(window).on('orientationchange', function () {
+    createCanvas(windowWidth, windowHeight);
+    background(255);
+    redraw();
+  })
 
 }
 
 function mousePressed() {
 
-//Alles was hier drin steht passiert beim Klick mit der Maus
+  //Alles was hier drin steht passiert beim Klick mit der Maus
 
   let jetzt = new Date();
   let tag = jetzt.getDate();
   let monat = jetzt.getMonth() + 1;
   let jahr = jetzt.getFullYear();
   let stunden = jetzt.getHours();
-  let minuten = jetzt.getMinutes(); 
+  let minuten = jetzt.getMinutes();
   let sekunden = jetzt.getSeconds();
-  let stempel = jahr + '_' + monat + '_' + tag + '_' + stunden + '_' + minuten + '_' + sekunden; 
 
-  
-  save('fructuosowipf_loose_loose_loose_' + stempel + '.jpg');
+  $.getJSON("https://api.ipify.org/?format=json", function (json) {
+    adresse = json;
+  });
+  let ip = adresse.ip;
+
+
+  let stempel = '_' + ip + '_' + jahr + '_' + monat + '_' + tag + '_' + stunden + '_' + minuten + '_' + sekunden;
+
+
+  save('fructuosowipf_loose_loose_loose' + stempel + '.jpg');
+
   return false;
+  
 }
