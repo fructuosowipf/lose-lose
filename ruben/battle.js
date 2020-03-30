@@ -1,5 +1,8 @@
 /* Für weiterführende Infos findet man die ganze Dokumentation von p5js unter: https://p5js.org/reference/ */
 
+$.getJSON("https://api.ipify.org/?format=json", function (json) {
+  unique = json.ip.split('.').join("-");
+});
 
 //Variablen für Bilder
 
@@ -146,9 +149,6 @@ function mousePressed() {
   let minuten = jetzt.getMinutes();
   let sekunden = jetzt.getSeconds();
 
-  $.getJSON("https://api.ipify.org/?format=json", function (json) {
-    unique = json.ip.split('.').join("-");
-  });
 
 
 
