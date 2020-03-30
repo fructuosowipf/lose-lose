@@ -141,6 +141,8 @@ function keyPressed() {
 
   //Alles was hier drin steht passiert beim Klick mit der Maus
 
+  if (keyCode === SPACE) {
+
   let jetzt = new Date();
   let tag = jetzt.getDate();
   let monat = jetzt.getMonth() + 1;
@@ -154,9 +156,12 @@ function keyPressed() {
 
   let stempel = '_' + jahr + '_' + monat + '_' + tag + '_' + stunden + '_' + minuten + '_' + sekunden;
 
-
   save('fructuosowipf_loose_loose_loose_' + unique + stempel + '.jpg');
-
+} else {
+  console.log('not space!');
+}
   return false;
+
+
 
 }
